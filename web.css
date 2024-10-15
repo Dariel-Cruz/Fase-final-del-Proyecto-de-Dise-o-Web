@@ -1,0 +1,17 @@
+body {
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.img-carousel {
+    height: 400px; /* Ajusta la altura de las imágenes del carousel */
+    object-fit: cover; /* Mantiene la proporción de las imágenes */
+}
+
+.card {
+    overflow: hidden; /* Evita que el contenido se desborde de las tarjetas */
+}
+
+/* Ajuste para el formulario en pantallas pequeñas */
+form {
+    margin-bottom: 15px; /* Espacio entre formularios */
+}

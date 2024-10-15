@@ -1,0 +1,125 @@
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignorar archivos de configuración
+*.log
+*.tmp
+*.bak
+
+# Ignorar carpetas de desarrollo
+node_modules/
+.vscode/
+.idea/
+
+# Ignorar imágenes temporales o no necesarias
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Ignorar cualquier archivo que no desees subir al repositorio
+
+# Ignorar carpetas del sistema
+**/.VirtualBox/
+**/.android/
+**/.bash_history
+**/.dotnet/
+**/.ganttproject/
+**/.vscode/
+**/AppData/
+**/Documents/
+**/Downloads/
+**/OneDrive/
+**/Unityproject/
+**/Videojuego/
+# Ignorar carpetas del sistema
+**/.VirtualBox/
+**/.android/
+**/.bash_history
+**/.dotnet/
+**/.ganttproject/
+**/.ganttproject.d/
+**/.gitconfig
+**/.gradle/
+**/.vscode/
+**/AppData/
+**/Documents/
+**/Downloads/
+**/OneDrive/
+**/Unityproject/
+**/Videojuego/
+**/Configuración local/
+**/Cookies/
+**/Datos de programa/
+**/Entorno de red/
+**/Impresoras/
+**/Menú Inicio/
+**/Mis documentos/
+**/Plantillas/
+**/Reciente/
+**/SendTo/
+# Ignorar configuraciones y directorios del sistema
+/Configuración local/
+/Cookies/
+/Datos de programa/
+/Entorno de red/
+/Impresoras/
+/Menú Inicio/
+/Mis documentos/
+/Plantillas/
+/Reciente/
+/SendTo/
+/Mi primer proyecto/
+/Saved Games/
+/Searches/
+/Favorites/
+/Contacts/
+/Desktop/
+/Documents/
+/Downloads/
+/Music/
+/Videojuego/
+/Unityproject/
+/IntelGraphicsProfiles/
+/OneDrive/
+/Links/
+/AppData/
+
+# Ignorar archivos del usuario
+../../.bash_history
+../../.gitconfig
+../../.ganttproject
+../../.ganttproject.d/
+../../.VirtualBox/
+../../.dotnet/
+../../.gradle/
+../../.vscode/
+../../Algoritmo_Dariel.psc
+../../BOA-Integrador_G_Skynet-V.1.1/
+../../NTUSER.DAT
+../../NTUSER.DAT{*}.TM.blf
+../../NTUSER.DAT{*}.TMContainer*.regtrans-ms
+../../ntuser.dat.LOG1
+../../ntuser.dat.LOG2
+../../ntuser.ini
+../../pseint/
+
+# Ignorar logs
+../../ganttproject.log
+../../ganttproject.log.*
+../../java*.log
+
+# Otros archivos y carpetas
+../desktop.ini
+# Ignorar configuraciones del sistema
+*.log
+*.tmp
+*.bak
+
+# Ignorar carpetas específicas
+/.vscode/
+/node_modules/
+/.DS_Store
+/.idea/
