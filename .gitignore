@@ -13,11 +13,7 @@ node_modules/
 .vscode/
 .idea/
 
-# Ignorar imágenes temporales o no necesarias
-*.jpg
-*.jpeg
-*.png
-*.gif
+
 
 # Ignorar cualquier archivo que no desees subir al repositorio
 
