@@ -1,149 +1,62 @@
-body {
-    overflow-x: hidden; /* Evita el desbordamiento horizontal */
-}
-
-.img-carousel {
-    height: 400px; /* Ajusta la altura de las imágenes del carousel */
-    object-fit: cover; /* Mantiene la proporción de las imágenes */
-}
-
-.card {
-    overflow: hidden; /* Evita que el contenido se desborde de las tarjetas */
-}
-
-/* Ajuste para el formulario en pantallas pequeñas */
-form {
-    margin-bottom: 15px; /* Espacio entre formularios */
-}
-
-.footer-logo {
-     align-items: flex-end flex-start;
-}
-
- .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color:goldenrod (0, 0, 0, 0.1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-
-      /* Personalización de la fuente y colores de la barra de navegación */
-.navbar-brand {
-    font-weight: bold;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #ffffff;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #f8f9fa;
-    text-decoration: underline;
-}
-
-.dropdown-menu {
-    background-color: #333;
-    color: #ffffff;
-}
-
-.dropdown-menu .dropdown-item {
-    color: #ffffff;
-}
-
-.dropdown-menu .dropdown-item:hover {
-    background-color: #555;
-}
-
-/* Estilo para el botón de búsqueda */
-.btn-outline-light {
-    color: #ffffff;
-    border-color: #ffffff;
-}
-
-.btn-outline-light:hover {
-    background-color: #ffffff;
-    color: #000;
-}
-
-
+/* Ajustes globales del footer */
 footer {
-    background-color: #343a40; /* Color oscuro */
+  background-color: #343a40; /* Fondo oscuro */
+  color: #ffffff;
+  padding: 24px;
+  text-align: center; /* Centra el contenido en pantallas pequeñas */
 }
-.text-light {
-    color: #ffffff !important; /* Asegura que el texto sea blanco */
+
+.logo_cd {
+  max-width: 100%;
+  height: auto;
 }
-.autoria {
-    background-color: #222; /* Un tono oscuro para la autoria */
-    padding: 10px 0;
-    color: white;
+
+/* Contenedor principal del footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Ajustes de alineación para las redes sociales */
+.social {
+  margin-top: 20px;
+}
+
+/* Ajustes para pantallas medianas y grandes */
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left; /* Alinea el texto a la izquierda en pantallas medianas */
+  }
+  .content {
+      margin-top: 0;
+      text-align: left;
+  }
+  .footer-logo {
+      flex-direction: column; /* Alinea los logos en una columna en pantallas medianas */
+      align-items: center;
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+  .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+  }
+  .content {
+      text-align: center;
+      margin-top: 0;
+  }
 }
