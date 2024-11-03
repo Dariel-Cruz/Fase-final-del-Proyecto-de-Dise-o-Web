@@ -2,61 +2,96 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap 4 CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <title>Escuela de Oficios San Rafael del Sur</title>
+
+    <!-- Enlace a Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+
     <!-- Archivo CSS personalizado -->
     <link rel="stylesheet" href="web.css">
-    <title>Escuela de Oficios San Rafael del Sur</title>
 </head>
-
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Escuela de Oficios San Rafael del Sur</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
-                            Más
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Oferta Académica</a>
-                            <a class="dropdown-item" href="#">Actividades</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Matricúlate</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Contáctenos</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
-            </div>     
+<!-- Contenedor de Logos -->
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 text-center">
+            <img class="img-responsive logo_cd img-fluid" src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png" alt="Logo Inatec Blanco">  
         </div>
-    </nav>
+        <div class="col-xs-12 col-sm-9 col-md-8">
+            <!-- Puedes agregar más contenido aquí si lo deseas -->
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-2 text-center">
+            <img src="Logos/gobierno-de-nicaragua-logo-1B0EAA59FF-seeklogo.com.png" class="img-responsive pull-right logo_cd img-fluid aline-top" alt="Logo Gobierno 2023">
+        </div>
+    </div>
+</div>
 
-    <!-- Carousel -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-column flex-lg-row" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">INICIO <span class="sr-only">(actual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ACERCA DE NOSOTROS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PROGRAMAS ACADÉMICOS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
+                        <a class="dropdown-item" href="#">CURSOS</a>
+                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
+                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
+                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
+                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
+                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Algo más aquí</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownActividades" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ACTIVIDADES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownActividades">
+                        <a class="dropdown-item" href="#">CURSOS</a>
+                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">GASTRONOMÍA</a>
+                    </div>
+                </li>
+                <li class="nav-item disabled">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CONTACTO</a>
+                </li>
+                <li class="nav-item disabled">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">MATRICÚLATE</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+ <!-- Carousel -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner mt-1">
             <div class="carousel-item active">
                 <img src="Hero/banner-portal-E.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 1">
             </div>
@@ -76,6 +111,66 @@
             <span class="sr-only">Siguiente</span>
         </a>
     </div>
+
+    <!-- Contenedor padre -->
+<div class="inicio container-fluid mt-3">
+    <h1 class="inicio-title text-center">Bienvenidos a la Escuela Técnica de San Rafael del Sur</h1>
+
+    <div class="row align-items-center">
+        <!-- Contenedor para la imagen y la reseña histórica -->
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="Inicio/327713114_5969093676492718_2005376533459337805_n (3).webp" 
+                 class="img-fluid rounded mb-3" 
+                 alt="Imagen de la Escuela Técnica de San Rafael del Sur">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h3 class="inicio-subtitle text-center">Reseña Histórica</h3>
+            <div class="reseña-wrapper">
+                <div class="reseña-content">
+                    <div class="reseña-text">
+                        <p class="inicio-text text-justify">
+                            La Escuela Técnica de San Rafael del Sur fue fundada en 1985 con el objetivo de proporcionar una educación técnica accesible y de calidad a los jóvenes de la región. La creación de la institución fue una respuesta a la necesidad de formar a una nueva generación en habilidades técnicas y profesionales, buscando fortalecer la economía local y brindar oportunidades laborales a sus egresados.
+                            <br><br>
+                            A lo largo de los años, la escuela ha evolucionado para adaptarse a los cambios en el mercado laboral y las necesidades de la comunidad. En sus inicios, la oferta educativa se centraba en áreas fundamentales como carpintería, mecánica y agricultura. Sin embargo, con el tiempo, la institución amplió su enfoque hacia disciplinas más contemporáneas, incluyendo la informática, la electrónica y la administración, integrando tecnologías modernas para preparar a sus estudiantes con las competencias más demandadas.
+                            <br><br>
+                            La Escuela Técnica de San Rafael del Sur se destaca por sus programas de formación integral, que no solo capacitan a los estudiantes en competencias técnicas, sino que también fomentan valores esenciales como la responsabilidad, el trabajo en equipo y el compromiso con el desarrollo comunitario. A través de convenios con empresas locales y organismos gubernamentales, la institución facilita la inserción laboral de sus egresados, quienes son reconocidos por su preparación y ética profesional.
+                            <br><br>
+                            Hoy en día, la escuela sigue siendo un pilar fundamental en la educación técnica de la región, manteniendo su compromiso de ofrecer educación gratuita y de calidad a cientos de estudiantes cada año. La Escuela Técnica de San Rafael del Sur continúa creciendo y adaptándose a los desafíos del siglo XXI, fortaleciendo su misión de formar profesionales capaces de contribuir al desarrollo sostenible de Nicaragua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-4">
+    <h2 class="sesion-title text-left">ACERCA DE NOSOTROS</h2>
+    <div class="row justify-content-center">
+        <!-- Primera tarjeta con imagen a la izquierda -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+                <img src="Acerca de nosotros/riug9o0p.webp" class="card-img-top img-fluid" alt="Imagen Izquierda">
+                <div class="card-body text-center">
+                    <h5 class="card-title">MISIÓN</h5>
+                    <p class="card-text text-justify">"Formar profesionales altamente capacitados en diversas áreas tecnológicas, promoviendo una educación práctica y accesible que impulse el desarrollo de habilidades técnicas y éticas. Nuestra misión es preparar a nuestros estudiantes para enfrentar los desafíos de un entorno laboral en constante cambio, brindándoles las herramientas y el conocimiento necesarios para contribuir al progreso y la innovación de su comunidad y del país."</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Segunda tarjeta con imagen a la derecha -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+                <img src="Acerca de nosotros/2xlmkxma.webp" class="card-img-top img-fluid" alt="Imagen Derecha">
+                <div class="card-body text-center">
+                    <h5 class="card-title">VISIÓN</h5>
+                    <p class="card-text text-justify">"Ser un referente nacional en la educación tecnológica y formación de oficios, destacándonos por nuestra calidad educativa, innovación y compromiso con el desarrollo profesional de nuestros estudiantes. Aspiramos a empoderar a nuestros graduados con competencias tecnológicas avanzadas que les permitan destacarse en el ámbito laboral, contribuyendo así al crecimiento y a la sostenibilidad de la economía local y nacional."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Sección de Contenido -->
     <div class="container-fluid mt-4">
@@ -369,7 +464,7 @@
     </a>
 </div>
 
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5 mb-5">
         <h2>Formulario de Registro</h2>
         <form>
             <!-- Fila para Nombre y Apellido -->
@@ -473,7 +568,7 @@
     </div>
 
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid mt-5">
             <div class="row">
                 <div class="col-xs-12 col-sm-3 col-md-2 text-center">
                     <img class="img-responsive logo_cd img-fluid" src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png" alt="Logo Inatec Blanco">  
@@ -516,15 +611,12 @@
         <div class="autoria text-center">© 2024 Escuela de Oficios San Rafael del Sur. Todos los derechos reservados Tecnológico Nacional.</div>
     </footer>
 
-    
-    <!-- Enlace a Bootstrap JS y dependencias de jQuery y Popper.js -->
+    <!-- Scripts de jQuery y Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
     
 
    
