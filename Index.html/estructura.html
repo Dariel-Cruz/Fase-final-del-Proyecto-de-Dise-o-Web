@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Escuela de Oficios San Rafael del Sur</title>
 
     <!-- Enlace a Bootstrap CSS -->
@@ -15,91 +16,87 @@
     <!-- Archivo CSS personalizado -->
     <link rel="stylesheet" href="web.css">
 </head>
+
 <body>
 
-<!-- Contenedor de Logos -->
-<div class="container-fluid mt-5">
-    <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-2 text-center">
-            <img class="img-responsive logo_cd img-fluid" src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png" alt="Logo Inatec Blanco">  
-        </div>
-        <div class="col-xs-12 col-sm-9 col-md-8">
-            <!-- Puedes agregar más contenido aquí si lo deseas -->
-        </div>
-        <div class="col-xs-12 col-sm-3 col-md-2 text-center">
-            <img src="Logos/gobierno-de-nicaragua-logo-1B0EAA59FF-seeklogo.com.png" class="img-responsive pull-right logo_cd img-fluid aline-top" alt="Logo Gobierno 2023">
-        </div>
-    </div>
-</div>
+    <!-- Contenedor de Logos -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 text-center">
+                <img class="img-responsive logo_cd img-fluid" src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png"
+                    alt="Logo Inatec Blanco">
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-8">
 
-<nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse flex-column flex-lg-row" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">INICIO <span class="sr-only">(actual)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ACERCA DE NOSOTROS</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PROGRAMAS ACADÉMICOS
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
-                        <a class="dropdown-item" href="#">CURSOS</a>
-                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
-                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
-                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
-                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
-                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
-
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Algo más aquí</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownActividades" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ACTIVIDADES
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownActividades">
-                        <a class="dropdown-item" href="#">CURSOS</a>
-                        <a class="dropdown-item" href="#">TECNOLOGÍA</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">GASTRONOMÍA</a>
-                    </div>
-                </li>
-                <li class="nav-item disabled">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CONTACTO</a>
-                </li>
-                <li class="nav-item disabled">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">MATRICÚLATE</a>
-                </li>
-            </ul>
-            <form class="d-flex ms-auto" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-2 text-center">
+                <img src="Logos/gobierno-de-nicaragua-logo-1B0EAA59FF-seeklogo.com.png"
+                    class="img-responsive pull-right logo_cd img-fluid aline-top" alt="Logo Gobierno 2023">
+            </div>
         </div>
     </div>
-</nav>
+    <!-- Aquí inicia la Navbar -->
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column flex-lg-row" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">INICIO <span class="sr-only">(actual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acerca">ACERCA DE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownAcademicos"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PROGRAMAS ACADÉMICOS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
+                            <a class="dropdown-item" href="#cursos">CURSOS</a>
+                            <a class="dropdown-item" href="#tecnologia">TECNOLOGÍA</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#gastronomia">Gastronomía</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#actividades">ACTIVIDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#matriculate">MATRICÚLATE</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
 
- <!-- Carousel -->
+    <!-- Inicia el Hero -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner mt-1">
             <div class="carousel-item active">
                 <img src="Hero/banner-portal-E.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 1">
             </div>
             <div class="carousel-item">
-                <img src="Hero/back_to_school_facebook_cover_17.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 2">
+                <img src="Hero/back_to_school_facebook_cover_17.jpg" class="d-block w-100 img-fluid"
+                    alt="Descripción de la imagen 2">
             </div>
             <div class="carousel-item">
-                <img src="Hero/back_to_school_facebook_cover_31.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 3">
+                <img src="Hero/back_to_school_facebook_cover_31.jpg" class="d-block w-100 img-fluid"
+                    alt="Descripción de la imagen 3">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleAutoplaying" role="button" data-slide="prev">
@@ -112,511 +109,599 @@
         </a>
     </div>
 
-    <!-- Contenedor padre -->
-<div class="inicio container-fluid mt-3">
-    <h1 class="inicio-title text-center">Bienvenidos a la Escuela Técnica de San Rafael del Sur</h1>
 
+
+    <!-- Sección de Inicio -->
+    <div id="inicio" class="inicio container-fluid mt-3">
+        <h1 class="inicio-title text-center">Bienvenidos a la Escuela Técnica de San Rafael del Sur</h1>
+    </div>
     <div class="row align-items-center">
         <!-- Contenedor para la imagen y la reseña histórica -->
         <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="Inicio/327713114_5969093676492718_2005376533459337805_n (3).webp" 
-                 class="img-fluid rounded mb-3" 
-                 alt="Imagen de la Escuela Técnica de San Rafael del Sur">
+            <img src="Inicio/327713114_5969093676492718_2005376533459337805_n (3).webp" class="img-fluid rounded mb-3"
+                alt="Imagen de la Escuela Técnica de San Rafael del Sur">
         </div>
+
         <div class="col-lg-6 col-md-6 col-sm-12">
             <h3 class="inicio-subtitle text-center">Reseña Histórica</h3>
             <div class="reseña-wrapper">
                 <div class="reseña-content">
                     <div class="reseña-text">
                         <p class="inicio-text text-justify">
-                            La Escuela Técnica de San Rafael del Sur fue fundada en 1985 con el objetivo de proporcionar una educación técnica accesible y de calidad a los jóvenes de la región. La creación de la institución fue una respuesta a la necesidad de formar a una nueva generación en habilidades técnicas y profesionales, buscando fortalecer la economía local y brindar oportunidades laborales a sus egresados.
+                            La Escuela Técnica de San Rafael del Sur fue fundada en 1985 con el objetivo de
+                            proporcionar una educación técnica accesible y de calidad a los jóvenes de la región. La
+                            creación de la institución fue una respuesta a la necesidad de formar a una nueva
+                            generación en habilidades técnicas y profesionales, buscando fortalecer la economía
+                            local y brindar oportunidades laborales a sus egresados.
                             <br><br>
-                            A lo largo de los años, la escuela ha evolucionado para adaptarse a los cambios en el mercado laboral y las necesidades de la comunidad. En sus inicios, la oferta educativa se centraba en áreas fundamentales como carpintería, mecánica y agricultura. Sin embargo, con el tiempo, la institución amplió su enfoque hacia disciplinas más contemporáneas, incluyendo la informática, la electrónica y la administración, integrando tecnologías modernas para preparar a sus estudiantes con las competencias más demandadas.
+                            A lo largo de los años, la escuela ha evolucionado para adaptarse a los cambios en el
+                            mercado laboral y las necesidades de la comunidad. En sus inicios, la oferta educativa
+                            se centraba en áreas fundamentales como carpintería, mecánica y agricultura. Sin
+                            embargo, con el tiempo, la institución amplió su enfoque hacia disciplinas más
+                            contemporáneas, incluyendo la informática, la electrónica y la administración,
+                            integrando tecnologías modernas para preparar a sus estudiantes con las competencias más
+                            demandadas.
                             <br><br>
-                            La Escuela Técnica de San Rafael del Sur se destaca por sus programas de formación integral, que no solo capacitan a los estudiantes en competencias técnicas, sino que también fomentan valores esenciales como la responsabilidad, el trabajo en equipo y el compromiso con el desarrollo comunitario. A través de convenios con empresas locales y organismos gubernamentales, la institución facilita la inserción laboral de sus egresados, quienes son reconocidos por su preparación y ética profesional.
+                            La Escuela Técnica de San Rafael del Sur se destaca por sus programas de formación
+                            integral, que no solo capacitan a los estudiantes en competencias técnicas, sino que
+                            también fomentan valores esenciales como la responsabilidad, el trabajo en equipo y el
+                            compromiso con el desarrollo comunitario. A través de convenios con empresas locales y
+                            organismos gubernamentales, la institución facilita la inserción laboral de sus
+                            egresados, quienes son reconocidos por su preparación y ética profesional.
                             <br><br>
-                            Hoy en día, la escuela sigue siendo un pilar fundamental en la educación técnica de la región, manteniendo su compromiso de ofrecer educación gratuita y de calidad a cientos de estudiantes cada año. La Escuela Técnica de San Rafael del Sur continúa creciendo y adaptándose a los desafíos del siglo XXI, fortaleciendo su misión de formar profesionales capaces de contribuir al desarrollo sostenible de Nicaragua.
+                            Hoy en día, la escuela sigue siendo un pilar fundamental en la educación técnica de la
+                            región, manteniendo su compromiso de ofrecer educación gratuita y de calidad a cientos
+                            de estudiantes cada año. La Escuela Técnica de San Rafael del Sur continúa creciendo y
+                            adaptándose a los desafíos del siglo XXI, fortaleciendo su misión de formar
+                            profesionales capaces de contribuir al desarrollo sostenible de Nicaragua.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
+
+    <!-- Sesión Acerca de nosotros -->
+
+    <div id="acerca" class="container mt-4">
+        <h2 class="sesion-title text-left">ACERCA DE NOSOTROS</h2>
+        <div class="row justify-content-center">
+            <!-- Primera tarjeta con imagen a la izquierda -->
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="Acerca de nosotros/riug9o0p.webp" class="card-img-top img-fluid" alt="Imagen Izquierda">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">MISIÓN</h5>
+                        <p class="card-text text-justify">"Formar profesionales altamente capacitados en diversas áreas
+                            tecnológicas, promoviendo una educación práctica y accesible que impulse el desarrollo de
+                            habilidades técnicas y éticas. Nuestra misión es preparar a nuestros estudiantes para
+                            enfrentar los desafíos de un entorno laboral en constante cambio, brindándoles las
+                            herramientas y el conocimiento necesarios para contribuir al progreso y la innovación de su
+                            comunidad y del país."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda tarjeta con imagen a la derecha -->
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="Acerca de nosotros/2xlmkxma.webp" class="card-img-top img-fluid" alt="Imagen Derecha">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">VISIÓN</h5>
+                        <p class="card-text text-justify">"Ser un referente nacional en la educación tecnológica y
+                            formación de oficios, destacándonos por nuestra calidad educativa, innovación y compromiso
+                            con el desarrollo profesional de nuestros estudiantes. Aspiramos a empoderar a nuestros
+                            graduados con competencias tecnológicas avanzadas que les permitan destacarse en el ámbito
+                            laboral, contribuyendo así al crecimiento y a la sostenibilidad de la economía local y
+                            nacional."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<div class="container mt-4">
-    <h2 class="sesion-title text-left">ACERCA DE NOSOTROS</h2>
-    <div class="row justify-content-center">
-        <!-- Primera tarjeta con imagen a la izquierda -->
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+
+
+    <!-- Curso de Diseño -->
+    <h3 class="card-title">Diseño</h3>
+    <div id="tecnologia" class="row container-fluid mt-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card">
-                <img src="Acerca de nosotros/riug9o0p.webp" class="card-img-top img-fluid" alt="Imagen Izquierda">
-                <div class="card-body text-center">
-                    <h5 class="card-title">MISIÓN</h5>
-                    <p class="card-text text-justify">"Formar profesionales altamente capacitados en diversas áreas tecnológicas, promoviendo una educación práctica y accesible que impulse el desarrollo de habilidades técnicas y éticas. Nuestra misión es preparar a nuestros estudiantes para enfrentar los desafíos de un entorno laboral en constante cambio, brindándoles las herramientas y el conocimiento necesarios para contribuir al progreso y la innovación de su comunidad y del país."</p>
+                <img src="Ofertas Académicas/Diseño/1/1.webp" class="card-img-top img-fluid" alt="Curso 1">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2  text-muted">Diseño</h4>
+                    <p class="card-text text-justify">Jóvenes estudiantes del curso de diseños y presentaciones de la
+                        escuela municipal de oficios haciendo sus exposiciones finales en conmemoración a nuestro mes
+                        patrio sólo gracias a nuestro gobierno de Reconciliación y unidad nacional haciendo llegar
+                        educación gratuita y de calidad.. ❤🖤🇳🇮✌
+                        #2021OrgulloPatrio
+                        #SanRafaelDelSur
+                        #2021PatriaBenditaYLibre</p>
                 </div>
             </div>
         </div>
-        
-        <!-- Segunda tarjeta con imagen a la derecha -->
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card">
-                <img src="Acerca de nosotros/2xlmkxma.webp" class="card-img-top img-fluid" alt="Imagen Derecha">
-                <div class="card-body text-center">
-                    <h5 class="card-title">VISIÓN</h5>
-                    <p class="card-text text-justify">"Ser un referente nacional en la educación tecnológica y formación de oficios, destacándonos por nuestra calidad educativa, innovación y compromiso con el desarrollo profesional de nuestros estudiantes. Aspiramos a empoderar a nuestros graduados con competencias tecnológicas avanzadas que les permitan destacarse en el ámbito laboral, contribuyendo así al crecimiento y a la sostenibilidad de la economía local y nacional."</p>
+                <img src="Ofertas Académicas/Diseño/1/2.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
+                    <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras protagonistas
+                        del curso de decoración para eventos comunidad El Chilamatillo realizaron estas lindas
+                        manualidades demostrando la educación técnica que han recibido de parte de nuestro gobierno
+                        sandinista ✌🖤❤🇳🇮
+                        #2021PatriaBenditaYLibre
+                        #2021DignosYLibres
+                        #2021OrgulloPatrio</p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-    <!-- Sección de Contenido -->
-    <div class="container-fluid mt-4">
-        <h2 class="text-center">Bienvenidos a Nuestra Escuela</h2>
-        <p class="text-center">Ofrecemos formación integral en diversas áreas para preparar a nuestros estudiantes para el futuro.</p>
-
-<!-- Sección de Actividades -->
-<div class="row mt-4">
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Preescolar/314048.jpg" class="card-img-top img-fluid" alt="Actividad 1">
-            <div class="card-body">
-                <h5 class="card-title">Explora tu creatividad</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Iniciativa y juego</h6>
-                <p class="card-text">Esta actividad fomenta la creatividad a través de materiales de uso cotidiano, permitiendo a los niños explorar su entorno y desarrollar sus habilidades motoras.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Preescolar/descarga (3).jpeg" class="card-img-top img-fluid" alt="Actividad 2">
-            <div class="card-body">
-                <h5 class="card-title">Aprende con Música</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Ritmo y movimiento</h6>
-                <p class="card-text">Una actividad para conectar a los niños con el ritmo y la coordinación a través de canciones interactivas y juegos de movimiento.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Preescolar/descarga (4).jpeg" class="card-img-top img-fluid" alt="Actividad 3">
-            <div class="card-body">
-                <h5 class="card-title">Experimenta con la Naturaleza</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Exploración y ciencia</h6>
-                <p class="card-text">Mediante esta actividad, los niños se familiarizan con el entorno natural a través de observaciones guiadas y pequeñas experimentaciones.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Preescolar/314048.jpg" class="card-img-top img-fluid" alt="Actividad 4">
-            <div class="card-body">
-                <h5 class="card-title">Construye con Bloques</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Habilidades espaciales</h6>
-                <p class="card-text">En esta actividad, los niños desarrollan sus habilidades espaciales y resolución de problemas a través del juego con bloques de construcción.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Sección de Actividades para Primaria -->
-<div class="row mt-4">
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Primaria/actividad1.jpg" class="card-img-top img-fluid" alt="Actividad Matemáticas">
-            <div class="card-body">
-                <h5 class="card-title">Matemáticas Divertidas</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Resolución de problemas</h6>
-                <p class="card-text">A través de juegos interactivos y acertijos, los estudiantes refuerzan conceptos de aritmética y lógica, fomentando la resolución de problemas de manera entretenida.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Primaria/actividad2.jpg" class="card-img-top img-fluid" alt="Actividad Ciencias">
-            <div class="card-body">
-                <h5 class="card-title">Exploración en Ciencias</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Descubrimiento y curiosidad</h6>
-                <p class="card-text">Los estudiantes experimentan con actividades prácticas que despiertan su curiosidad por el mundo natural, desde la observación de plantas hasta pequeños experimentos de física.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Primaria/actividad3.jpg" class="card-img-top img-fluid" alt="Actividad Lectura">
-            <div class="card-body">
-                <h5 class="card-title">Club de Lectura</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Comprensión y expresión</h6>
-                <p class="card-text">En este club, los estudiantes leen y comparten historias, mejorando sus habilidades de comprensión lectora y ampliando su vocabulario de una forma colaborativa.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Primaria/actividad4.jpg" class="card-img-top img-fluid" alt="Actividad Arte y Creatividad">
-            <div class="card-body">
-                <h5 class="card-title">Arte y Creatividad</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Expresión artística</h6>
-                <p class="card-text">A través de proyectos de pintura, escultura y manualidades, los estudiantes desarrollan su creatividad y aprenden a expresarse mediante el arte.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Sección de Actividades para Secundaria -->
-<div class="row mt-4">
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/actividad1.jpg" class="card-img-top img-fluid" alt="Actividad Laboratorio de Ciencias">
-            <div class="card-body">
-                <h5 class="card-title">Laboratorio de Ciencias</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Experimentos y análisis</h6>
-                <p class="card-text">Los estudiantes exploran conceptos científicos a través de prácticas en laboratorio, realizando experimentos que fortalecen su comprensión y habilidades analíticas.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/actividad2.jpg" class="card-img-top img-fluid" alt="Actividad Debate y Oratoria">
-            <div class="card-body">
-                <h5 class="card-title">Debate y Oratoria</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Pensamiento crítico y expresión</h6>
-                <p class="card-text">Esta actividad fomenta el desarrollo de habilidades comunicativas y de pensamiento crítico, mientras los estudiantes debaten temas actuales y relevantes en un entorno colaborativo.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/actividad3.jpg" class="card-img-top img-fluid" alt="Actividad Club de Tecnología">
-            <div class="card-body">
-                <h5 class="card-title">Club de Tecnología</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Innovación y habilidades digitales</h6>
-                <p class="card-text">A través de proyectos de programación, robótica y diseño, los estudiantes desarrollan habilidades técnicas y aprenden a aplicar la tecnología en situaciones del mundo real.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/actividad4.jpg" class="card-img-top img-fluid" alt="Actividad Emprendimiento y Liderazgo">
-            <div class="card-body">
-                <h5 class="card-title">Emprendimiento y Liderazgo</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Creatividad y gestión de proyectos</h6>
-                <p class="card-text">En esta actividad, los estudiantes desarrollan proyectos emprendedores, potenciando habilidades de liderazgo y creatividad para enfrentar desafíos reales.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Sección de Actividades Deportivas para Secundaria -->
-<div class="row mt-4">
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/deportes_futbol.jpg" class="card-img-top img-fluid" alt="Actividad Fútbol">
-            <div class="card-body">
-                <h5 class="card-title">Fútbol</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Trabajo en equipo y deporte</h6>
-                <p class="card-text">Los estudiantes participan en equipos de fútbol, desarrollando habilidades de cooperación y estrategia en el juego mientras se divierten y se mantienen activos.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/deportes_balonesto.jpg" class="card-img-top img-fluid" alt="Actividad Baloncesto">
-            <div class="card-body">
-                <h5 class="card-title">Baloncesto</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Agilidad y precisión</h6>
-                <p class="card-text">El baloncesto es una actividad popular entre los estudiantes, donde mejoran su agilidad y precisión mientras compiten en torneos internos y amistosos.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/deportes_atletismo.jpg" class="card-img-top img-fluid" alt="Actividad Atletismo">
-            <div class="card-body">
-                <h5 class="card-title">Atletismo</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Velocidad y resistencia</h6>
-                <p class="card-text">Los estudiantes participan en carreras de velocidad y fondo, así como en saltos y lanzamientos, promoviendo un estilo de vida saludable y activo.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/deportes_natacion.jpg" class="card-img-top img-fluid" alt="Actividad Natación">
-            <div class="card-body">
-                <h5 class="card-title">Natación</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Habilidades acuáticas y seguridad</h6>
-                <p class="card-text">En las clases de natación, los estudiantes aprenden técnicas de nado y seguridad en el agua, lo que les ayuda a desarrollar confianza y habilidades acuáticas.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Sección de Eventos para Secundaria -->
-<div class="row mt-4">
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/evento_dia_deportivo.jpg" class="card-img-top img-fluid" alt="Día Deportivo">
-            <div class="card-body">
-                <h5 class="card-title">Día Deportivo</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Celebración de la actividad física</h6>
-                <p class="card-text">Un día lleno de actividades deportivas donde los estudiantes participan en diversas competiciones y juegos, promoviendo la salud y el trabajo en equipo.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/evento_exposicion_ciencia.jpg" class="card-img-top img-fluid" alt="Exposición de Ciencias">
-            <div class="card-body">
-                <h5 class="card-title">Exposición de Ciencias</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Fomentando la curiosidad científica</h6>
-                <p class="card-text">Los estudiantes presentan proyectos y experimentos científicos, fomentando la creatividad y el interés por la ciencia entre sus compañeros y docentes.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/evento_festival_cultural.jpg" class="card-img-top img-fluid" alt="Festival Cultural">
-            <div class="card-body">
-                <h5 class="card-title">Festival Cultural</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Celebrando la diversidad</h6>
-                <p class="card-text">Un evento que celebra las diversas culturas del alumnado a través de bailes, comidas y presentaciones artísticas, promoviendo la inclusión y el respeto.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/evento_beneficencia.jpg" class="card-img-top img-fluid" alt="Evento de Beneficencia">
-            <div class="card-body">
-                <h5 class="card-title">Evento de Beneficencia</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Solidaridad y ayuda comunitaria</h6>
-                <p class="card-text">Los estudiantes participan en actividades para recaudar fondos y proporcionar ayuda a comunidades necesitadas, fomentando valores de solidaridad y responsabilidad social.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Sección de Noticias para Secundaria -->
-<div class="row mt-4">
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/noticia_clase_inaugural.jpg" class="card-img-top img-fluid" alt="Clase Inaugural">
-            <div class="card-body">
-                <h5 class="card-title">Clase Inaugural del Año Escolar</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Un nuevo comienzo</h6>
-                <p class="card-text">La comunidad educativa se reunió para dar la bienvenida a los estudiantes y presentar el plan educativo del año. Fue un día lleno de entusiasmo y expectativas.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/noticia_concurso_arte.jpg" class="card-img-top img-fluid" alt="Concurso de Arte">
-            <div class="card-body">
-                <h5 class="card-title">Concurso de Arte Estudiantil</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Creatividad en acción</h6>
-                <p class="card-text">Estudiantes de diversas clases participaron en un concurso de arte, mostrando su talento y creatividad. Las obras ganadoras serán exhibidas en el hall de la escuela.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/noticia_visita_educativa.jpg" class="card-img-top img-fluid" alt="Visita Educativa">
-            <div class="card-body">
-                <h5 class="card-title">Visita Educativa a la Universidad Local</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Conociendo el futuro</h6>
-                <p class="card-text">Un grupo de estudiantes tuvo la oportunidad de visitar la universidad local, donde aprendieron sobre las carreras disponibles y la vida estudiantil en la educación superior.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Secundaria/noticia_dia_del_libro.jpg" class="card-img-top img-fluid" alt="Día del Libro">
-            <div class="card-body">
-                <h5 class="card-title">Celebración del Día del Libro</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Fomentando la lectura</h6>
-                <p class="card-text">Los estudiantes celebraron el Día del Libro con lecturas, presentaciones de autores y actividades creativas, promoviendo el amor por la literatura en toda la comunidad escolar.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-  <!-- Carousel para la sección de matrícula-->
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="Hero/banner-portal-E.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 1">
-        </div>
-        <div class="carousel-item">
-            <img src="Hero/back_to_school_facebook_cover_17.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 2">
-        </div>
-        <div class="carousel-item">
-            <img src="Hero/back_to_school_facebook_cover_31.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 3">
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleAutoplaying" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleAutoplaying" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-    </a>
-</div>
-
-    <div class="container-fluid mt-5 mb-5">
-        <h2>Formulario de Registro</h2>
-        <form>
-            <!-- Fila para Nombre y Apellido -->
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label class="form-label" for="input_name">Nombre:</label>
-                    <input type="text" id="input_name" class="form-control" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label class="form-label" for="input_lastname">Apellido:</label>
-                    <input type="text" id="input_lastname" class="form-control" required>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="Ofertas Académicas/Diseño/1/3.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
+                    <p class="card-text text-justify">Jóvenes estudiantes del curso de diseños y presentaciones de la
+                        escuela municipal de oficios haciendo sus exposiciones finales en conmemoración a nuestro mes
+                        patrio sólo gracias a nuestro gobierno de Reconciliación y unidad nacional haciendo llegar
+                        educación gratuita y de calidad.. ❤🖤🇳🇮✌
+                        #2021OrgulloPatrio
+                        #SanRafaelDelSur
+                        #2021PatriaBenditaYLibre</p>
                 </div>
             </div>
-            
-            <!-- Campo de Email -->
-            <label class="form-label" for="input_email">Email:</label>
-            <div class="input-group mb-3">    
-                <span class="input-group-text">@</span>
-                <input type="email" id="input_email" class="form-control" required>                
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="Ofertas Académicas/Diseño/1/4.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
+                    <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras protagonistas
+                        del curso de decoración para eventos comunidad El Chilamatillo realizaron estas lindas
+                        manualidades demostrando la educación técnica que han recibido de parte de nuestro gobierno
+                        sandinista ✌🖤❤🇳🇮
+                        #2021PatriaBenditaYLibre
+                        #2021DignosYLibres
+                        #2021OrgulloPatrio</p>
+                </div>
             </div>
-            
-            <!-- Fila para Teléfono, País, Ciudad y Fecha de Nacimiento -->
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <label class="form-label" for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" class="form-control" required>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label class="form-label" for="pais">País:</label>
-                    <input type="text" id="pais" class="form-control" list="paises" required>
-                    <datalist id="paises">
-                        <option value="España">
-                        <option value="Argentina">
-                        <option value="México">
-                        <option value="Colombia">
-                        <option value="Chile">
-                    </datalist>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label class="form-label" for="ciudad">Ciudad:</label>
-                    <select id="ciudad" class="form-select mb-3" required>
-                        <option value="">Seleccione una ciudad</option>
-                        <option value="madrid">Madrid</option>
-                        <option value="bogota">Bogotá</option>
-                        <option value="mexico">Mexico D.C.</option>
-                        <option value="buenos_aires">Buenos Aires</option>
-                        <option value="santiago">Santiago de Chile</option>
-                    </select>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label class="form-label" for="fecha">Fecha de nacimiento:</label>
-                    <input type="date" id="fecha" class="form-control" required>                    
-                </div>                
-            </div>
+        </div>
 
-            <!-- Fila para Color, Nivel de Conocimientos y Foto de Perfil -->
-            <div class="row">                
-                <div class="col-md-4 mb-3">
-                    <label class="form-label" for="color">Color de identificación:</label>
-                    <input type="color" id="color" class="form-control form-control-color" required>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label class="form-label" for="conocimientos">Nivel de conocimientos:</label>
-                    <input type="range" id="conocimientos" class="form-range" min="1" max="10" required>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label class="form-label" for="foto">Foto de perfil:</label>
-                    <input type="file" id="foto" class="form-control">
-                </div>
-            </div>
-            
-            <!-- Fila para Intereses (checkboxes) -->
-            <div class="row text-center">
-                <div class="col-md-4 offset-md-4 mb-3">
-                    <label for="intereses">Intereses:</label><br>
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" id="tecnologia" value="tecnologia" class="form-check-input">
-                        <label for="tecnologia" class="form-check-label">Tecnología</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" id="negocios" value="negocios" class="form-check-input">
-                        <label for="negocios" class="form-check-label">Negocios</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" id="arte" value="arte" class="form-check-input">
-                        <label for="arte" class="form-check-label">Arte</label>
+        <!-- Curso de Mantenimiento y Reparación de Computadoras-->
+
+        <h3 class="card-title">Mantenimiento y Reparación de Computadoras</h3>
+
+        <div id class="row container-fluid mt-4">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="Ofertas Académicas/Cur/2/1.webp" class="card-img-top img-fluid" alt="Curso 1">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2  text-muted">Mantenimiento</h4>
+                        <p class="card-text text-justify">Jóvenes estudiantes del curso de diseños y presentaciones de
+                            la escuela municipal de oficios haciendo sus exposiciones finales en conmemoración a nuestro
+                            mes patrio sólo gracias a nuestro gobierno de Reconciliación y unidad nacional haciendo
+                            llegar educación gratuita y de calidad.. ❤🖤🇳🇮✌
+                            #2021OrgulloPatrio
+                            #SanRafaelDelSur
+                            #2021PatriaBenditaYLibre</p>
                     </div>
                 </div>
             </div>
-            
-            <!-- Área de texto para comentarios -->
-            <label class="form-label" for="comentarios">Comentarios adicionales:</label>
-            <textarea id="comentarios" class="form-control mb-3" rows="4" cols="30"></textarea>
-    
-            <!-- Botones de envío y cancelación -->
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                <button type="reset" class="btn btn-danger btn-lg">Cancelar</button>
-            </div>
-        </form>
-    </div>
-
-    <footer>
-        <div class="container-fluid mt-5">
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-2 text-center">
-                    <img class="img-responsive logo_cd img-fluid" src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png" alt="Logo Inatec Blanco">  
-                </div>
-                <div class="col-xs-12 col-sm-9 col-md-8">
-                    <div class="content text-center text-light">
-                        Capacitación y Educación Técnica Gratuita y de Calidad. <br>
-                        Dirección: Centro Cívico Zumen, frente al Hospital Bertha Calderón, Managua. <br>
-                        Teléfonos: Planta Central 2253-8830, Atención al Protagonista 2253-8888
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="Ofertas Académicas/Cur/2/2.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
+                        <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras
+                            protagonistas
+                            del curso de decoración para eventos comunidad El Chilamatillo realizaron estas lindas
+                            manualidades demostrando la educación técnica que han recibido de parte de nuestro gobierno
+                            sandinista ✌🖤❤🇳🇮
+                            #2021PatriaBenditaYLibre
+                            #2021DignosYLibres
+                            #2021OrgulloPatrio</p>
                     </div>
-                    <div class="row text-light text-center mt-3">
-                        <div class="col-xs-4 col-sm-4 col-md-4">
-                            <a href="/" class="text-light">INICIO</a><br>
-                            <a href="/acerca/" class="text-light">NOSOTROS</a><br>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4">
-                            <a href="/ofertas/" class="text-light">OFERTA ACADÉMICA</a><br>
-                            <a href="" class="text-light">CENTROS</a><br>
-                            <a href="/calidad/" class="text-light">CALIDAD</a><br>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4">
-                            <a href="/empresas/" class="text-light">EMPRESAS</a><br>
-                            <a href="/adquisiciones" class="text-light">ADQUISICIONES</a><br>
-                            <a href="" class="text-light">RECURSOS</a><br>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="Ofertas Académicas/Cur/2/3.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
+                        <p class="card-text text-justify">J#26agosto// Impartiendo Clases del Curso Sistemas Operativos
+                            y Ofimática en el Turno matutino. 🤓👨🏻‍🏫🎓🖥🖱🌐📶
+                            #ManaguaSandinista
+                            #SanRafaelDelSur
+                            #2021OrgulloPatrio
+                            #SanRafaelDelSur
+                            #2021PatriaBenditaYLibre</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="Ofertas Académicas/Cur/2/4.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
+                        <p class="card-text text-justify">#26agosto// Impartiendo Clases del Curso Sistemas Operativos y
+                            Ofimática en el Turno matutino. 🤓👨🏻‍🏫🎓🖥🖱🌐📶
+                            #ManaguaSandinista
+                            #SanRafaelDelSur
+                            sandinista ✌🖤❤🇳🇮
+                            #2021PatriaBenditaYLibre
+                            #2021DignosYLibres
+                            #2021OrgulloPatrio</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Curso de Gastronomía -->
+            <h3 class="card-title text-center">Gastronomía</h3>
+
+            <div id="gastronomia" class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="card">
+                            <img src="Ofertas Académicas/Gastronomía/3/1.webp" class="card-img-top img-fluid"
+                                alt="Curso de Manualidades">
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
+                                <p class="card-text text-justify">
+                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
+                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
+                                    adquiridas, gracias al apoyo de nuestro gobierno.
+                                    <br>
+                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="social text-center mt-3">
-                        <a href="https://www.facebook.com/TecNacional" target="_blank" class="text-light mx-2" aria-label="Facebook"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com/TecNacional" target="_blank" class="text-light mx-2" aria-label="Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/tecnacional/?hl=es" target="_blank" class="text-light mx-2" aria-label="Instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/user/TecnologicoNacional" target="_blank" class="text-light mx-2" aria-label="YouTube"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
-                        <a href="#" class="text-light mx-2" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-2 text-center">
-                    <img src="Logos/gobierno-de-nicaragua-logo-1B0EAA59FF-seeklogo.com.png" class="img-responsive pull-right logo_cd img-fluid aline-top " alt="logo gobierno 2023">
-                </div>
-            </div>
-        </div>
-        <div class="autoria text-center">© 2024 Escuela de Oficios San Rafael del Sur. Todos los derechos reservados Tecnológico Nacional.</div>
-    </footer>
 
-    <!-- Scripts de jQuery y Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <!-- Card con Imagen 2 -->
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="card">
+                            <img src="Ofertas Académicas/Gastronomía/3/2.webp" class="card-img-top img-fluid"
+                                alt="Curso de Manualidades">
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
+                                <p class="card-text text-justify">
+                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
+                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
+                                    adquiridas, gracias al apoyo de nuestro gobierno.
+                                    <br>
+                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card con Imagen 3 -->
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="card">
+                            <img src="Ofertas Académicas/Gastronomía/3/3.webp" class="card-img-top img-fluid"
+                                alt="Curso de Manualidades">
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
+                                <p class="card-text text-justify">
+                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
+                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
+                                    adquiridas, gracias al apoyo de nuestro gobierno.
+                                    <br>
+                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- Cierre de la fila -->
+            </div> <!-- Cierre del contenedor -->
+
+            <!-- Curso de Gastronomia -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="Ofertas Académicas/Decoración/decoracion.2.webp" class="card-img-top img-fluid"
+                                alt="Curso 1">
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
+                                <p class="card-text text-justify">Preciosas decoraciones de montaje para evento de las
+                                    compañeras protagonistas del curso de decoración para eventos comunidad el
+                                    chilamatillo demostrando la calidad de nuestros programas sociales fomentados por
+                                    nuestro gobierno del frente sandinista ❤🖤
+                                    #EnVictoriosaEsperanza
+                                    #ManaguaSandinista</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="Ofertas Académicas/Decoración/Decoración.webp" class="card-img-top img-fluid"
+                                alt="Curso 1">
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
+                                <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras
+                                    protagonistas del curso de decoración para eventos comunidad El Chilamatillo
+                                    realizaron
+                                    estas lindas manualidades demostrando la educación técnica que han recibido de parte
+                                    de
+                                    nuestro gobierno sandinista ✌🖤❤🇳🇮
+                                    #2021PatriaBenditaYLibre
+                                    #2021DignosYLibres
+                                    #2021OrgulloPatrio</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="Ofertas Académicas/Decoración/deco.4.webp" class="card-img-top img-fluid"
+                                alt="Curso 1">
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2  text-muted">Gastronomía</h4>
+                                <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras
+                                    protagonistas del curso de decoración para eventos comunidad El Chilamatillo
+                                    realizaron
+                                    estas lindas manualidades demostrando la educación técnica que han recibido de parte
+                                    de
+                                    nuestro gobierno sandinista ✌🖤❤🇳🇮
+                                    #2021PatriaBenditaYLibre
+                                    #2021DignosYLibres
+                                    #2021OrgulloPatrio</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="Ofertas Académicas/Decoración/curso-decoracion.2.webp" class="card-img-top img-fluid img-responsive"
+                                alt="Curso 1">
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2  text-muted">Gastronomía</h4>
+                                <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras
+                                    protagonistas del curso de decoración para eventos comunidad El Chilamatillo
+                                    realizaron
+                                    estas lindas manualidades demostrando la educación técnica que han recibido de parte
+                                    de
+                                    nuestro gobierno sandinista ✌🖤❤🇳🇮
+                                    #2021PatriaBenditaYLibre
+                                    #2021DignosYLibres
+                                    #2021OrgulloPatrio</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Sesión de videos -->
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <!-- Card con Video -->
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="card">
+                                    <video src="Ofertas Académicas/Gastronomía/3/669274380924641.mp4"
+                                        class="card-img-top img-fluid" controls autoplay loop muted
+                                        poster="Ofertas Académicas/Gastronomía/retro-poster.jpg"></video>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Curso de Gastronomía</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
+                                        <p class="card-text">Este curso introduce a los estudiantes en técnicas de
+                                            cocina clásica, permitiéndoles revivir y experimentar la gastronomía de
+                                            décadas pasadas.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel para la sección de matrícula-->
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Hero/banner-portal-E.jpg" class="d-block w-100 img-fluid"
+                                            alt="Descripción de la imagen 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Hero/back_to_school_facebook_cover_17.jpg"
+                                            class="d-block w-100 img-fluid" alt="Descripción de la imagen 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Hero/back_to_school_facebook_cover_31.jpg"
+                                            class="d-block w-100 img-fluid" alt="Descripción de la imagen 3">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleAutoplaying" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleAutoplaying" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Siguiente</span>
+                                </a>
+                            </div>
+
+                            <!--Aquí comienza el formulario de contacto-->
+                            <div class="container-fluid mt-5 mb-5">
+                                <h2>Formulario de Registro</h2>
+                                <form>
+                                    <!-- Fila para Nombre y Apellido -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label" for="input_name">Nombre:</label>
+                                            <input type="text" id="input_name" class="form-control" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label" for="input_lastname">Apellido:</label>
+                                            <input type="text" id="input_lastname" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo de Email -->
+                                    <label class="form-label" for="input_email">Email:</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">@</span>
+                                        <input type="email" id="input_email" class="form-control" required>
+                                    </div>
+
+                                    <!-- Fila para Teléfono, País, Ciudad y Fecha de Nacimiento -->
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3">
+                                            <label class="form-label" for="telefono">Teléfono:</label>
+                                            <input type="tel" id="telefono" class="form-control" required>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label class="form-label" for="pais">País:</label>
+                                            <input type="text" id="pais" class="form-control" list="paises" required>
+                                            <datalist id="paises">
+                                                <option value="España">
+                                                <option value="Argentina">
+                                                <option value="México">
+                                                <option value="Colombia">
+                                                <option value="Chile">
+                                            </datalist>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label class="form-label" for="ciudad">Ciudad:</label>
+                                            <select id="ciudad" class="form-select mb-3" required>
+                                                <option value="">Seleccione una ciudad</option>
+                                                <option value="madrid">Madrid</option>
+                                                <option value="bogota">Bogotá</option>
+                                                <option value="mexico">Mexico D.C.</option>
+                                                <option value="buenos_aires">Buenos Aires</option>
+                                                <option value="santiago">Santiago de Chile</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label class="form-label" for="fecha">Fecha de nacimiento:</label>
+                                            <input type="date" id="fecha" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Fila para Color, Nivel de Conocimientos y Foto de Perfil -->
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <label class="form-label" for="color">Color de identificación:</label>
+                                            <input type="color" id="color" class="form-control form-control-color"
+                                                required>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="form-label" for="conocimientos">Nivel de
+                                                conocimientos:</label>
+                                            <input type="range" id="conocimientos" class="form-range" min="1" max="10"
+                                                required>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="form-label" for="foto">Foto de perfil:</label>
+                                            <input type="file" id="foto" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <!-- Fila para Intereses (checkboxes) -->
+                                    <div class="row text-center">
+                                        <div class="col-md-4 offset-md-4 mb-3">
+                                            <label for="intereses">Intereses:</label><br>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" id="tecnologia" value="tecnologia"
+                                                    class="form-check-input">
+                                                <label for="tecnologia" class="form-check-label">Tecnología</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" id="negocios" value="negocios"
+                                                    class="form-check-input">
+                                                <label for="negocios" class="form-check-label">Negocios</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" id="arte" value="arte" class="form-check-input">
+                                                <label for="arte" class="form-check-label">Arte</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Área de texto para comentarios -->
+                                    <label class="form-label" for="comentarios">Comentarios adicionales:</label>
+                                    <textarea id="comentarios" class="form-control mb-3" rows="4" cols="30"></textarea>
+
+                                    <!-- Botones de envío y cancelación -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                        <button type="reset" class="btn btn-danger btn-lg">Cancelar</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Aquí comienza el footer -->
+                            <footer>
+                                <div class="container-fluid mt-5">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3 col-md-2 text-center">
+                                            <img class="img-responsive logo_cd img-fluid"
+                                                src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png"
+                                                alt="Logo Inatec Blanco">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9 col-md-8">
+                                            <div class="content text-center text-light">
+                                                Capacitación y Educación Técnica Gratuita y de Calidad. <br>
+                                                Dirección: Centro Cívico Zumen, frente al Hospital Bertha Calderón,
+                                                Managua. <br>
+                                                Teléfonos: Planta Central 2253-8830, Atención al Protagonista 2253-8888
+                                            </div>
+                                            <div class="row text-light text-center mt-3">
+                                                <div class="col-xs-4 col-sm-4 col-md-4">
+                                                    <a href="/" class="text-light">INICIO</a><br>
+                                                    <a href="/acerca/" class="text-light">NOSOTROS</a><br>
+                                                </div>
+                                                <div class="col-xs-4 col-sm-4 col-md-4">
+                                                    <a href="/ofertas/" class="text-light">OFERTA ACADÉMICA</a><br>
+                                                    <a href="" class="text-light">CENTROS</a><br>
+                                                    <a href="/calidad/" class="text-light">CALIDAD</a><br>
+                                                </div>
+                                                <div class="col-xs-4 col-sm-4 col-md-4">
+                                                    <a href="/empresas/" class="text-light">EMPRESAS</a><br>
+                                                    <a href="/adquisiciones" class="text-light">ADQUISICIONES</a><br>
+                                                    <a href="" class="text-light">RECURSOS</a><br>
+                                                </div>
+                                            </div>
+                                            <div class="social text-center mt-3">
+                                                <a href="https://www.facebook.com/TecNacional" target="_blank"
+                                                    class="text-light mx-2" aria-label="Facebook"><i
+                                                        class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                                                <a href="https://twitter.com/TecNacional" target="_blank"
+                                                    class="text-light mx-2" aria-label="Twitter"><i
+                                                        class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                                                <a href="https://www.instagram.com/tecnacional/?hl=es" target="_blank"
+                                                    class="text-light mx-2" aria-label="Instagram"><i
+                                                        class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                                                <a href="https://www.youtube.com/user/TecnologicoNacional"
+                                                    target="_blank" class="text-light mx-2" aria-label="YouTube"><i
+                                                        class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+                                                <a href="#" class="text-light mx-2" aria-label="LinkedIn"><i
+                                                        class="bi bi-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 col-md-2 text-center">
+                                            <img src="Logos/gobierno-de-nicaragua-logo-1B0EAA59FF-seeklogo.com.png"
+                                                class="img-responsive pull-right logo_cd img-fluid aline-top "
+                                                alt="logo gobierno 2023">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="autoria text-center">© 2024 Escuela de Oficios San Rafael del Sur. Todos los
+                                    derechos
+                                    reservados Tecnológico Nacional.</div>
+                            </footer>
+
+                            <!-- Scripts de jQuery y Bootstrap -->
+                            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                            <script
+                                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+                            <script
+                                src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html>
-    
 
-   
+</html>
