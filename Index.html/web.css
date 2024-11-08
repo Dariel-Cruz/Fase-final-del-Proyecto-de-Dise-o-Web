@@ -1,3 +1,9 @@
+/* Estilos generales */
+body {
+  background-color: #f8faf9; /* Color de fondo claro */
+}
+
+/* Variables de color */
 :root {
   --primary-color: #14578B;
   --secondary-color: #20d3b5;
@@ -8,6 +14,16 @@
   --footer-text-color: #ffffff;
 }
 
+/* Reset general */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
 .navbar {
   width: 100%;
   padding: 1rem;
@@ -38,255 +54,240 @@
 .nav-link {
   margin-right: 10px;
   color: #ffffff;
-  transition: color 0.3s ease;
-  font-family: 'Roboto Slab', serif; /* Cambia a Roboto Slab */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   font-weight: 600;
   padding: 10px 15px;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--hover-color);
+  background-color: rgba(255, 204, 0, 0.1);
 }
 
-.dropdown-menu {
-  background-color: var(--dropdown-bg);
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text-color);
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-image: url('/ruta/a/tu/imagen.jpg'); /* Ruta de la imagen */
+  background-size: cover;
+  background-position: center;
 }
 
-.dropdown-item:hover {
-  background-color: var(--dropdown-hover-bg);
-  transition: background-color 0.3s ease;
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 991px) {
-  .navbar-collapse {
-    display: flex;
+footer .container-fluid,
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .col-xs-12, footer .col-sm-3, footer .col-md-2, footer .col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer .social a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+  color: #ffcc00;
+}
+
+footer .autoria {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  padding: 10px 15px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Estilo para imágenes fluidas */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajuste de contenedores para evitar desbordamiento */
+.content {
+  word-wrap: break-word;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* Estilo de texto centrado */
+.text-center {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #ffffff;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+/* Asegurando que las columnas se ajusten bien */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-xs-12, .col-sm-6, .col-md-8, .col-md-2 {
+  padding: 0 10px; /* Agrega un pequeño padding para evitar el desbordamiento */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .content {
+    font-size: 14px; /* Reducir el tamaño de la fuente si es necesario */
+  }
+
+  .social a {
+    font-size: 20px; /* Reducir el tamaño de los íconos si es necesario */
+  }
+
+  footer .col-xs-12, footer .col-sm-3, footer .col-md-2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  footer .col-md-8 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  footer .social {
+    flex-wrap: wrap; /* Ajusta el diseño de los iconos en pantallas pequeñas */
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) and (max-width: 1148px) {
+  .reseña-content {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .navbar-nav {
-    margin: 10px 0;
-    width: 100%;
-    text-align: center;
-    background-color: var(--primary-color);
-  }
-
-  .nav-link {
-    display: block;
-    text-align: left;
-  }
-}
-
-/* Media queries adicionales para tabletas */
-@media (max-width: 768px) {
-  .nav-link {
-    font-size: 14px;
-  }
-
-  .navbar {
-    padding: 0.5rem;
-  }
-}
-
-/* Estilos para el footer */
-footer {
-  background-color: var(--footer-bg);
-  color: var(--footer-text-color);
-  padding: 24px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .footer-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.footer-logo img {
-  max-height: 50px;
-  width: auto;
-}
-
-.ico {
-  margin-right: 16px;
-}
-
-.ico:last-child {
-  margin-right: 0;
-}
-
-.logo {
-  padding: 0 8px;
-}
-
-.navbar-brand img {
-  transition: transform 0.3s ease;
-}
-
-.navbar-brand:hover img {
-  transform: scale(1.1);
-}
-
-/* Estilos para la navbar en pantallas grandes */
-@media (min-width: 992px) {
-  .navbar-nav {
-    flex-direction: row; /* Disposición horizontal para pantallas grandes */
-    justify-content: center;
-  }
-
-  .navbar-nav .nav-item {
-    margin: 0 10px;
-  }
-}
-
-/* Títulos y textos de inicio */
-.inicio-title {
-  font-family: 'Roboto Slab', serif;
-  font-size: 36px;
-  font-weight: 700; /* Semibold */
-  margin-bottom: 16px;
-}
-
-.inicio-subtitle {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 400; /* Regular */
-  margin-bottom: 8px;
-  text-align: left; /* Alinear el subtítulo a la izquierda */
-}
-
-.inicio-text {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* Estilo de imágenes en inicio */
-.inicio img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 20px;
-  
-}
-
-/* Reseña */
-.reseña-wrapper {
-  max-width: 100%; /* Se ajusta al contenedor padre */
-  margin: 0 auto; /* Centra el contenedor en la columna */
-  padding: 16px; /* Espacio interno del contenedor */
-  display: flex; /* Activar Flexbox */
-  flex-direction: column; /* Colocar elementos en columna */
-}
-
-.reseña-content {
-  display: flex; /* Hacer que el contenedor de imagen y texto esté alineado */
-  align-items: center; /* Centrar verticalmente */
-  justify-content: space-between; /* Espacio entre imagen y texto */
-}
-
-.reseña-imagen {
-  flex: 1 1 40%; /* Crece, se encoge y ocupa un 40% del espacio disponible */
-  max-width: 100%; /* Evita que la imagen desborde el contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  margin-right: 16px; /* Espacio entre la imagen y el texto */
-}
-
-.reseña-text {
-  flex: 2 1 60%; /* Crece, se encoge y ocupa un 60% del espacio disponible */
-  display: flex; /* Hacer que el texto también use Flexbox */
-  flex-direction: column; /* Alinear el texto en columna */
-  justify-content: center; /* Centrar el texto verticalmente */
-}
-
-/* Estilo de las imágenes dentro de la sección de reseña */
-.reseña-imagen img {
-  width: 100%;          /* La imagen se ajustará al ancho del contenedor */
-  height: auto;        /* Mantiene la proporción de la imagen */
-  max-width: 800px;    /* No excederá 800px de ancho */
-  max-height: 800px;   /* No excederá 800px de alto */
-  border-radius: 8px;  /* Bordes redondeados */
-}
-
-  
-
-/* Asegurarte de que el texto sea responsivo */
-.inicio-text {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* Tamaño base */
-  line-height: 1.6;
-  padding: 8px; /* Espaciado interno para el texto */
-}
-
-/* Media queries para ajustar el tamaño del texto en pantallas más pequeñas */
-@media (max-width: 768px) {
-  .reseña-text {
-    font-size: 14px; /* Disminuir el tamaño del texto */
-  }
   .reseña-imagen {
-    margin-right: 8px; /* Ajustar margen para pantallas pequeñas */
-  }
-}
-
-/* Ajustes para pantallas de 992px a 1148px */
-@media (min-width: 992px) and (max-width: 1148px) {
-  .reseña-content {
-    flex-direction: column; /* Cambia a columna para evitar desbordamiento */
-    align-items: stretch; /* Asegúrate que los elementos se estiren al máximo */
-  }
-
-  .reseña-imagen {
-    max-width: 100%; /* Se asegura que la imagen no desborde */
-    margin: 0; /* Elimina margen si causa desbordamiento */
+    max-width: 100%;
+    margin: 0;
   }
 
   .reseña-text {
-    padding: 0 16px; /* Añade padding horizontal para separación */
+    padding: 0 16px;
   }
 
   .inicio-title {
-    font-size: 28px; /* Ajusta el tamaño del texto en pantallas medianas */
+    font-size: 36px;
   }
 
   .inicio-subtitle {
-    font-size: 16px; /* Ajusta el tamaño del texto en pantallas medianas */
+    font-size: 16px;
   }
 
   .inicio-text {
-    font-size: 14px; /* Ajusta el tamaño del texto en pantallas medianas */
+    font-size: 14px;
+    font-family: 'Roboto',serif;
+  }
+
+  .titulo-principal {
+    font-size: 36px;
+    font-family: 'Roboto',serif;
   }
 }
 
-.card-title{
-    font-family: 'Roboto Slab', serif;
-    font-size: 28px;
-    font-weight: 600; /* Semibold */
-    margin-bottom: 16px;
+
+/* Responsividad en pantallas pequeñas */
+@media (max-width: 768px) {
+  footer .social {
+    flex-wrap: wrap;  /* Los íconos se ajustan a una nueva fila si es necesario */
   }
-.card-text{
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* Tamaño base */
-  line-height: 1.6;
-  padding: 8px; /* Espaciado interno para el texto */
+
+  footer .social a {
+    font-size: 20px; /* Reducir tamaño de íconos */
+    margin: 10px 5px;
+  }
+}
+footer .social {
+  display: flex;
+  justify-content: center;  /* Centra los íconos horizontalmente */
+  margin-top: 20px;
 }
 
-.sesion-title{
-  font-family: 'Roboto', sans-serif;
-  font-size: 32px; /* Tamaño base */
-  line-height: 1.6;
-  padding: 8px; /* Espaciado interno para el texto */
-  font-weight: 600;
+footer .social a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
 }
 
+footer .social a:hover {
+  color: #ffcc00;  /* Color al hacer hover */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  footer .social {
+    flex-wrap: wrap;  /* Los íconos se ajustan a una nueva fila si es necesario */
+  }
+
+  footer .social a {
+    font-size: 20px; /* Reducir tamaño de íconos */
+    margin: 10px 5px;
+  }
+  /* Estilo del logo centrado con tamaño mínimo y máximo */
+.centered-logo {
+  width: 150px; /* Tamaño base del logo */
+  height: auto; /* Mantiene la proporción */
+  max-width: 250px; /* Tamaño máximo del logo */
+  min-width: 100px; /* Tamaño mínimo del logo */
+  margin: 0 auto; /* Centrado horizontal */
+  display: block; /* Asegura que el logo esté centrado en su contenedor */
+}
+
+
+.col-sm-3.col-md-3 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+
+    .container-fluid {
+      margin: 0;
+      padding: 0; /* Centra horizontalmente */
+      width: 100; /* Centra verticalmente si es necesario */
+  }
+
+  scroll-behavior: smooth;
+} 
+}

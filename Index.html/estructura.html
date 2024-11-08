@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,29 +15,31 @@
     <!-- Archivo CSS personalizado -->
     <link rel="stylesheet" href="web.css">
 </head>
-
 <body>
-
-    <!-- Contenedor de Logos -->
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-2 text-center">
-                <img class="img-responsive logo_cd img-fluid" src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png"
-                    alt="Logo Inatec Blanco">
+   <!-- Contenedor de Logos -->
+<div class="container-fluid mb-3 mt-3">
+    <div class="row align-items-center">
+        <div class="col-sm-3 col-md-3 text-center">
+            <img class="img-fluid" src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png" alt="Logo Inatec Blanco">
+        </div>
+        <div class="col-sm-6 col-md-6 d-flex justify-content-center">
+            <div class="col-sm-3 col-md-3 mb-5 text-center">
+                <img class="centered-logo img-fluid" src="Logos/rafael2021.png" alt="Logo Inatec Blanco">
             </div>
-            <div class="col-xs-12 col-sm-9 col-md-8">
-
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-2 text-center">
-                <img src="Logos/gobierno-de-nicaragua-logo-1B0EAA59FF-seeklogo.com.png"
-                    class="img-responsive pull-right logo_cd img-fluid aline-top" alt="Logo Gobierno 2023">
-            </div>
+            
+        </div>
+        <div class="col-sm-3 col-md-3 text-center">
+            <img src="Logos/gobierno-de-nicaragua-logo-1B0EAA59FF-seeklogo.com.png" class="img-fluid" alt="Logo Gobierno 2023">
         </div>
     </div>
+</div>
     <!-- Aquí inicia la Navbar -->
-
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav id="programas" class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-3 col-lg-6 col-lg-12">
+                
+            </div>
             <a class="navbar-brand" href="#inicio"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,24 +50,41 @@
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#inicio">INICIO <span class="sr-only">(actual)</span></a>
+
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#acerca">ACERCA DE NOSOTROS</a>
+                     <li class="nav-item ">
+                        <a class="nav-link dropdown-toggle" href="#acerca"> ACERCA DE NOSOTROS</a>
                     </li>
+                   
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownAcademicos"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             PROGRAMAS ACADÉMICOS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
-                            <a class="dropdown-item" href="#cursos">CURSOS</a>
-                            <a class="dropdown-item" href="#tecnologia">TECNOLOGÍA</a>
-                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#cursos">OFERTAS ACADÉMICAS</a>
+                            <a class="dropdown-item" href="#tecnologia">CURSOS</a>
+                            <a class="dropdown-item" href="#mantenimiento">Mantenimiento y Reparación de Computadoras</a>
+                            <a class="dropdown-item" href="#decoracion">Decoración de Eventos</a>
                             <a class="dropdown-item" href="#gastronomia">Gastronomía</a>
+
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#actividades">ACTIVIDADES</a>
+
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#actividades" id="navbarDropdownAcademicos"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ACTIVIDADES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
+                            <a class="dropdown-item" href="#noticias">Noticias</a>
+                            <a class="dropdown-item" href="#eventos">Eventos</a>
+                            <a class="dropdown-item" href="#videos">Sesión de videos</a>
+
+
+
+                            
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">CONTACTO</a>
@@ -75,9 +93,10 @@
                         <a class="nav-link" href="#matriculate">MATRICÚLATE</a>
                     </li>
                 </ul>
-                <form class="d-flex ms-auto" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <form class="d-flex mx-4 ms-auto " role="search">
+                    <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success " type="submit">Buscar</button>
+                    
                 </form>
             </div>
         </div>
@@ -113,7 +132,7 @@
 
     <!-- Sección de Inicio -->
     <div id="inicio" class="inicio container-fluid mt-3">
-        <h1 class="inicio-title text-center">Bienvenidos a la Escuela Técnica de San Rafael del Sur</h1>
+        <h1 class="titulo-principal text-center">Bienvenidos a la Escuela Técnica de San Rafael del Sur</h1>
     </div>
     <div class="row align-items-center">
         <!-- Contenedor para la imagen y la reseña histórica -->
@@ -164,7 +183,7 @@
 
     <!-- Sesión Acerca de nosotros -->
 
-    <div id="acerca" class="container mt-4">
+    <div id="acerca" class="container  mb-4 mt-4">
         <h2 class="sesion-title text-left">ACERCA DE NOSOTROS</h2>
         <div class="row justify-content-center">
             <!-- Primera tarjeta con imagen a la izquierda -->
@@ -200,148 +219,66 @@
             </div>
         </div>
     </div>
+<!-- Curso de Mantenimiento y Reparación de Computadoras-->
+<h3 class="card-title">MANTENIMIENTO Y REPARACIÓN DE PC</h3>
 
-
-
-
-    <!-- Curso de Diseño -->
-    <h3 class="card-title">Diseño</h3>
-    <div id="tecnologia" class="row container-fluid mt-4">
-        <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card">
-                <img src="Ofertas Académicas/Diseño/1/1.webp" class="card-img-top img-fluid" alt="Curso 1">
-                <div class="card-body">
-                    <h4 class="card-subtitle mb-2  text-muted">Diseño</h4>
-                    <p class="card-text text-justify">Jóvenes estudiantes del curso de diseños y presentaciones de la
-                        escuela municipal de oficios haciendo sus exposiciones finales en conmemoración a nuestro mes
-                        patrio sólo gracias a nuestro gobierno de Reconciliación y unidad nacional haciendo llegar
-                        educación gratuita y de calidad.. ❤🖤🇳🇮✌
-                        #2021OrgulloPatrio
-                        #SanRafaelDelSur
-                        #2021PatriaBenditaYLibre</p>
-                </div>
+<div id="mantenimiento" class="row container-fluid w-100 my-4">
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+            <img src="Ofertas Académicas/Cur/2/1.webp" class="card-img-top img-fluid" alt="Imagen de curso de mantenimiento" aria-label="Imagen de curso de mantenimiento">
+            <div class="card-body">
+                <h4 class="card-subtitle mb-2 text-muted">Mantenimiento</h4>
+                <p class="card-text text-justify">
+                    Jóvenes estudiantes del curso de diseño y presentaciones de la escuela municipal de oficios
+                    exponiendo sus trabajos en conmemoración a nuestro mes patrio, gracias al gobierno de
+                    Reconciliación y Unidad Nacional por brindar educación gratuita y de calidad. ❤🖤🇳🇮✌
+                    #2021OrgulloPatrio #SanRafaelDelSur #2021PatriaBenditaYLibre
+                </p>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card">
-                <img src="Ofertas Académicas/Diseño/1/2.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
-                <div class="card-body">
-                    <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
-                    <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras protagonistas
-                        del curso de decoración para eventos comunidad El Chilamatillo realizaron estas lindas
-                        manualidades demostrando la educación técnica que han recibido de parte de nuestro gobierno
-                        sandinista ✌🖤❤🇳🇮
-                        #2021PatriaBenditaYLibre
-                        #2021DignosYLibres
-                        #2021OrgulloPatrio</p>
-                </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+            <img src="Ofertas Académicas/Cur/2/2.webp" class="card-img-top img-fluid" alt="Curso de manualidades" aria-label="Curso de manualidades">
+            <div class="card-body">
+                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
+                <p class="card-text text-justify">
+                    En conmemoración a nuestro mes patrio, compañeras del curso de decoración para eventos
+                    en El Chilamatillo realizaron hermosas manualidades, demostrando su formación técnica
+                    recibida. ✌🖤❤🇳🇮 #2021PatriaBenditaYLibre #2021DignosYLibres #2021OrgulloPatrio
+                </p>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card">
-                <img src="Ofertas Académicas/Diseño/1/3.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
-                <div class="card-body">
-                    <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
-                    <p class="card-text text-justify">Jóvenes estudiantes del curso de diseños y presentaciones de la
-                        escuela municipal de oficios haciendo sus exposiciones finales en conmemoración a nuestro mes
-                        patrio sólo gracias a nuestro gobierno de Reconciliación y unidad nacional haciendo llegar
-                        educación gratuita y de calidad.. ❤🖤🇳🇮✌
-                        #2021OrgulloPatrio
-                        #SanRafaelDelSur
-                        #2021PatriaBenditaYLibre</p>
-                </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+            <img src="Ofertas Académicas/Cur/2/3.webp" class="card-img-top img-fluid" alt="Curso de sistemas operativos y ofimática" aria-label="Curso de sistemas operativos y ofimática">
+            <div class="card-body">
+                <h4 class="card-subtitle mb-2 text-muted">Sistemas Operativos y Ofimática</h4>
+                <p class="card-text text-justify">
+                    #26agosto // Clases del curso de Sistemas Operativos y Ofimática en el turno matutino.
+                    🤓👨🏻‍🏫🎓🖥🖱🌐📶 #ManaguaSandinista #SanRafaelDelSur #2021OrgulloPatrio
+                    #SanRafaelDelSur #2021PatriaBenditaYLibre
+                </p>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card">
-                <img src="Ofertas Académicas/Diseño/1/4.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
-                <div class="card-body">
-                    <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
-                    <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras protagonistas
-                        del curso de decoración para eventos comunidad El Chilamatillo realizaron estas lindas
-                        manualidades demostrando la educación técnica que han recibido de parte de nuestro gobierno
-                        sandinista ✌🖤❤🇳🇮
-                        #2021PatriaBenditaYLibre
-                        #2021DignosYLibres
-                        #2021OrgulloPatrio</p>
-                </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+            <img src="Ofertas Académicas/Cur/2/4.webp" class="card-img-top img-fluid" alt="Curso de sistemas operativos y ofimática" aria-label="Curso de sistemas operativos y ofimática">
+            <div class="card-body">
+                <h4 class="card-subtitle mb-2 text-muted">Sistemas Operativos y Ofimática</h4>
+                <p class="card-text text-justify">
+                    #26agosto // Clases de Sistemas Operativos y Ofimática en el turno matutino.
+                    🤓👨🏻‍🏫🎓🖥🖱🌐📶 #ManaguaSandinista #SanRafaelDelSur #2021PatriaBenditaYLibre
+                    #2021DignosYLibres #2021OrgulloPatrio
+                </p>
             </div>
-        </div>
-
-        <!-- Curso de Mantenimiento y Reparación de Computadoras-->
-
-        <h3 class="card-title">Mantenimiento y Reparación de Computadoras</h3>
-
-        <div id class="row container-fluid mt-4">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <img src="Ofertas Académicas/Cur/2/1.webp" class="card-img-top img-fluid" alt="Curso 1">
-                    <div class="card-body">
-                        <h4 class="card-subtitle mb-2  text-muted">Mantenimiento</h4>
-                        <p class="card-text text-justify">Jóvenes estudiantes del curso de diseños y presentaciones de
-                            la escuela municipal de oficios haciendo sus exposiciones finales en conmemoración a nuestro
-                            mes patrio sólo gracias a nuestro gobierno de Reconciliación y unidad nacional haciendo
-                            llegar educación gratuita y de calidad.. ❤🖤🇳🇮✌
-                            #2021OrgulloPatrio
-                            #SanRafaelDelSur
-                            #2021PatriaBenditaYLibre</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <img src="Ofertas Académicas/Cur/2/2.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
-                    <div class="card-body">
-                        <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
-                        <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras
-                            protagonistas
-                            del curso de decoración para eventos comunidad El Chilamatillo realizaron estas lindas
-                            manualidades demostrando la educación técnica que han recibido de parte de nuestro gobierno
-                            sandinista ✌🖤❤🇳🇮
-                            #2021PatriaBenditaYLibre
-                            #2021DignosYLibres
-                            #2021OrgulloPatrio</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <img src="Ofertas Académicas/Cur/2/3.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
-                    <div class="card-body">
-                        <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
-                        <p class="card-text text-justify">J#26agosto// Impartiendo Clases del Curso Sistemas Operativos
-                            y Ofimática en el Turno matutino. 🤓👨🏻‍🏫🎓🖥🖱🌐📶
-                            #ManaguaSandinista
-                            #SanRafaelDelSur
-                            #2021OrgulloPatrio
-                            #SanRafaelDelSur
-                            #2021PatriaBenditaYLibre</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <img src="Ofertas Académicas/Cur/2/4.webp" class="card-img-top img-fluid" alt="Curso de Diseño">
-                    <div class="card-body">
-                        <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
-                        <p class="card-text text-justify">#26agosto// Impartiendo Clases del Curso Sistemas Operativos y
-                            Ofimática en el Turno matutino. 🤓👨🏻‍🏫🎓🖥🖱🌐📶
-                            #ManaguaSandinista
-                            #SanRafaelDelSur
-                            sandinista ✌🖤❤🇳🇮
-                            #2021PatriaBenditaYLibre
-                            #2021DignosYLibres
-                            #2021OrgulloPatrio</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <!-- Curso de Gastronomía -->
-            <h3 class="card-title text-center">Gastronomía</h3>
-
+        </div>  
+    </div>  
+</div>
+   <!-- Curso de Gastronomía -->
+            <h3 class="card-title text-center">GASTRONOMÍA</h3>
             <div id="gastronomia" class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
@@ -401,9 +338,11 @@
             </div> <!-- Cierre del contenedor -->
 
             <!-- Curso de Gastronomia -->
-            <div class="container-fluid">
+            <h3 class="card-title text-center">DECORACIÓN DE EVENTOS </h3>
+
+            <div id="decoracion" class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="Ofertas Académicas/Decoración/decoracion.2.webp" class="card-img-top img-fluid"
                                 alt="Curso 1">
@@ -419,7 +358,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="Ofertas Académicas/Decoración/Decoración.webp" class="card-img-top img-fluid"
                                 alt="Curso 1">
@@ -437,69 +376,184 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    
+                     <!-- Curso de Gastronomía -->
+            <h3 class="card-title text-center">NOTICIAS</h3>
+            <div id="noticias" class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="card">
-                            <img src="Ofertas Académicas/Decoración/deco.4.webp" class="card-img-top img-fluid"
-                                alt="Curso 1">
+                            <img src="Ofertas Académicas/Gastronomía/3/1.webp" class="card-img-top img-fluid"
+                                alt="Curso de Manualidades">
                             <div class="card-body">
-                                <h4 class="card-subtitle mb-2  text-muted">Gastronomía</h4>
-                                <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras
-                                    protagonistas del curso de decoración para eventos comunidad El Chilamatillo
-                                    realizaron
-                                    estas lindas manualidades demostrando la educación técnica que han recibido de parte
-                                    de
-                                    nuestro gobierno sandinista ✌🖤❤🇳🇮
-                                    #2021PatriaBenditaYLibre
-                                    #2021DignosYLibres
-                                    #2021OrgulloPatrio</p>
+                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
+                                <p class="card-text text-justify">
+                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
+                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
+                                    adquiridas, gracias al apoyo de nuestro gobierno.
+                                    <br>
+                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <!-- Card con Imagen 2 -->
+                    <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="card">
-                            <img src="Ofertas Académicas/Decoración/curso-decoracion.2.webp" class="card-img-top img-fluid img-responsive"
-                                alt="Curso 1">
+                            <img src="Ofertas Académicas/Gastronomía/3/2.webp" class="card-img-top img-fluid"
+                                alt="Curso de Manualidades">
                             <div class="card-body">
-                                <h4 class="card-subtitle mb-2  text-muted">Gastronomía</h4>
-                                <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras
-                                    protagonistas del curso de decoración para eventos comunidad El Chilamatillo
-                                    realizaron
-                                    estas lindas manualidades demostrando la educación técnica que han recibido de parte
-                                    de
-                                    nuestro gobierno sandinista ✌🖤❤🇳🇮
-                                    #2021PatriaBenditaYLibre
-                                    #2021DignosYLibres
-                                    #2021OrgulloPatrio</p>
+                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
+                                <p class="card-text text-justify">
+                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
+                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
+                                    adquiridas, gracias al apoyo de nuestro gobierno.
+                                    <br>
+                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
+                                </p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Card con Imagen 3 -->
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="card">
+                            <img src="Ofertas Académicas/Gastronomía/3/3.webp" class="card-img-top img-fluid"
+                                alt="Curso de Manualidades">
+                            <div class="card-body">
+                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
+                                <p class="card-text text-justify">
+                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
+                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
+                                    adquiridas, gracias al apoyo de nuestro gobierno.
+                                    <br>
+                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!-- Sesión de videos -->
-                    <div class="container-fluid">
+                </div> <!-- Cierre de la fila -->
+            </div> <!-- Cierre del contenedor -->
+
+             <!-- Curso de Gastronomía -->
+
+             <h3 class="card-title text-center">EVENTOS</h3>
+             <div id="eventos" class="container-fluid">
+                 <div class="row">
+                     <div class="col-lg-4 col-md-4 col-sm-12">
+                         <div class="card">
+                             <img src="Ofertas Académicas/Gastronomía/3/1.webp" class="card-img-top img-fluid"
+                                 alt="Curso de Manualidades">
+                             <div class="card-body">
+                                 <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
+                                 <p class="card-text text-justify">
+                                     Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
+                                     demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
+                                     adquiridas, gracias al apoyo de nuestro gobierno.
+                                     <br>
+                                     #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <!-- Card con Imagen 2 -->
+                     <div class="col-lg-4 col-md-4 col-sm-12">
+                         <div class="card">
+                             <img src="Ofertas Académicas/Gastronomía/3/2.webp" class="card-img-top img-fluid"
+                                 alt="Curso de Manualidades">
+                             <div class="card-body">
+                                 <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
+                                 <p class="card-text text-justify">
+                                     Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
+                                     demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
+                                     adquiridas, gracias al apoyo de nuestro gobierno.
+                                     <br>
+                                     #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <!-- Card con Imagen 3 -->
+                     <div class="col-lg-4 col-md-4 col-sm-12">
+                         <div class="card">
+                             <img src="Ofertas Académicas/Gastronomía/3/3.webp" class="card-img-top img-fluid"
+                                 alt="Curso de Manualidades">
+                             <div class="card-body">
+                                 <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
+                                 <p class="card-text text-justify">
+                                     Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
+                                     demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
+                                     adquiridas, gracias al apoyo de nuestro gobierno.
+                                     <br>
+                                     #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+ 
+                 </div> <!-- Cierre de la fila -->
+             </div> <!-- Cierre del contenedor -->
+ 
+            
+             <h3 class="card-title text-center">SESIÓN DE VIDEOS</h3>
+
+                    <di id="videos" class="container-fluid">
                         <div class="row">
-
-                            <!-- Card con Video -->
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="card">
+                            <!-- Primer video y descripción -->
+                            <div class="col-lg-3 col-md-12 mb-4">
+                                <div class="embed-responsive embed-responsive-16by9">
                                     <video src="Ofertas Académicas/Gastronomía/3/669274380924641.mp4"
-                                        class="card-img-top img-fluid" controls autoplay loop muted
-                                        poster="Ofertas Académicas/Gastronomía/retro-poster.jpg"></video>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Curso de Gastronomía</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
-                                        <p class="card-text">Este curso introduce a los estudiantes en técnicas de
-                                            cocina clásica, permitiéndoles revivir y experimentar la gastronomía de
-                                            décadas pasadas.</p>
+                                        class="card-img-top img-fluid" autoplay loop muted poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
+                                    </video>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Curso de Gastronomía</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
+                                    <p class="card-text text-justify">
+                                        Este curso introduce a los estudiantes en técnicas de cocina clásica, permitiéndoles revivir y experimentar la gastronomía de décadas pasadas.
+                                    </p>
+                                </div>
+                            </div>     
+                                    <!-- Segundo video y descripción -->
+                                    <div class="col-lg-6 col-md-12 mb-4">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <video src="Ofertas Académicas/Gastronomía/3/669274380924641.mp4"
+                                                class="card-img-top img-fluid" autoplay loop muted poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
+                                            </video>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title ">Curso de Gastronomía</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
+                                            <p class="card-text text-justify">
+                                                Este curso introduce a los estudiantes en técnicas de cocina clásica, permitiéndoles revivir y experimentar la gastronomía de décadas pasadas.
+                                            </p>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Tercer video y descripción -->
+                                    <div class="col-lg-3 col-md-12 mb-4">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <video src="Ofertas Académicas/Gastronomía/3/669274380924641.mp4"
+                                                class="card-img-top img-fluid" autoplay loop muted poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
+                                            </video>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Curso de Gastronomía</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
+                                            <p class="card-text text-justify">
+                                                Este curso introduce a los estudiantes en técnicas de cocina clásica, permitiéndoles revivir y experimentar la gastronomía de décadas pasadas.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Carousel para la sección de matrícula-->
-                            <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
+                            <div id="matriculate" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="Hero/banner-portal-E.jpg" class="d-block w-100 img-fluid"
@@ -527,7 +581,7 @@
                             </div>
 
                             <!--Aquí comienza el formulario de contacto-->
-                            <div class="container-fluid mt-5 mb-5">
+                            <div id="contacto" class="container-fluid mt-5 mb-5">
                                 <h2>Formulario de Registro</h2>
                                 <form>
                                     <!-- Fila para Nombre y Apellido -->
@@ -635,73 +689,74 @@
                                 </form>
                             </div>
 
-                            <!-- Aquí comienza el footer -->
                             <footer>
-                                <div class="container-fluid mt-5">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-3 col-md-2 text-center">
-                                            <img class="img-responsive logo_cd img-fluid"
-                                                src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png"
-                                                alt="Logo Inatec Blanco">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-9 col-md-8">
-                                            <div class="content text-center text-light">
-                                                Capacitación y Educación Técnica Gratuita y de Calidad. <br>
-                                                Dirección: Centro Cívico Zumen, frente al Hospital Bertha Calderón,
-                                                Managua. <br>
-                                                Teléfonos: Planta Central 2253-8830, Atención al Protagonista 2253-8888
-                                            </div>
-                                            <div class="row text-light text-center mt-3">
-                                                <div class="col-xs-4 col-sm-4 col-md-4">
-                                                    <a href="/" class="text-light">INICIO</a><br>
-                                                    <a href="/acerca/" class="text-light">NOSOTROS</a><br>
-                                                </div>
-                                                <div class="col-xs-4 col-sm-4 col-md-4">
-                                                    <a href="/ofertas/" class="text-light">OFERTA ACADÉMICA</a><br>
-                                                    <a href="" class="text-light">CENTROS</a><br>
-                                                    <a href="/calidad/" class="text-light">CALIDAD</a><br>
-                                                </div>
-                                                <div class="col-xs-4 col-sm-4 col-md-4">
-                                                    <a href="/empresas/" class="text-light">EMPRESAS</a><br>
-                                                    <a href="/adquisiciones" class="text-light">ADQUISICIONES</a><br>
-                                                    <a href="" class="text-light">RECURSOS</a><br>
-                                                </div>
-                                            </div>
-                                            <div class="social text-center mt-3">
-                                                <a href="https://www.facebook.com/TecNacional" target="_blank"
-                                                    class="text-light mx-2" aria-label="Facebook"><i
-                                                        class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-                                                <a href="https://twitter.com/TecNacional" target="_blank"
-                                                    class="text-light mx-2" aria-label="Twitter"><i
-                                                        class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-                                                <a href="https://www.instagram.com/tecnacional/?hl=es" target="_blank"
-                                                    class="text-light mx-2" aria-label="Instagram"><i
-                                                        class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-                                                <a href="https://www.youtube.com/user/TecnologicoNacional"
-                                                    target="_blank" class="text-light mx-2" aria-label="YouTube"><i
-                                                        class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
-                                                <a href="#" class="text-light mx-2" aria-label="LinkedIn"><i
-                                                        class="bi bi-linkedin"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3 col-md-2 text-center">
-                                            <img src="Logos/gobierno-de-nicaragua-logo-1B0EAA59FF-seeklogo.com.png"
-                                                class="img-responsive pull-right logo_cd img-fluid aline-top "
-                                                alt="logo gobierno 2023">
-                                        </div>
+                                <div class="container-fluid ultimod">
+                                  <div class="row">
+                                    <div class="col-xs-12 col-sm-3 col-md-2" style="padding-top: 5px">
+                                      <img class="img-responsive" src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png" alt="Logo Inatec Blanco"><br>
                                     </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-8">
+                                      <div class="content text-center">
+                                        Capacitación y Educación Técnica Gratuita y de Calidad. <br>
+                                        Dirección: Centro Cívico Zumen, frente al Hospital Bertha Calderón, Managua. <br>
+                                        Teléfonos: Planta Central 2253-8830, Atención al Protagonista 2253-8888
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-xs-4 col-sm-4 col-md-4">
+                                        
+                                        </div>
+                                      </div>
+                                     <!-- Contenedor de los iconos de redes sociales -->
+<div class="social">
+    <a href="https://www.facebook.com/TecNacional" target="_blank" class="blanco">
+        <i class="bi bi-facebook"></i> <!-- Icono de Facebook -->
+    </a>
+    <a href="https://twitter.com/TecNacional" target="_blank" class="blanco">
+        <i class="bi bi-twitter"></i> <!-- Icono de Twitter -->
+    </a>
+    <a href="https://www.instagram.com/tecnacional/?hl=es" target="_blank" class="blanco">
+        <i class="bi bi-instagram"></i> <!-- Icono de Instagram -->
+    </a>
+    <a href="https://www.youtube.com/user/TecnologicoNacional" target="_blank" class="blanco">
+        <i class="bi bi-youtube"></i> <!-- Icono de YouTube -->
+    </a>
+</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-2">
+                                      <img src="Logos/gobierno-de-nicaragua-logo-1B0EAA59FF-seeklogo.com.png" class="img-responsive pull-right" alt="logo gobierno 2023">
+                                    </div>
+                                  </div>
+                                  <div class="autoria text-center azul">Todos los derechos reservados Tecnológico Nacional</div>
                                 </div>
-                                <div class="autoria text-center">© 2024 Escuela de Oficios San Rafael del Sur. Todos los
-                                    derechos
-                                    reservados Tecnológico Nacional.</div>
-                            </footer>
-
+                              </footer>
+                              
+           
                             <!-- Scripts de jQuery y Bootstrap -->
-                            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-                            <script
-                                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-                            <script
-                                src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<!-- Script para desplazamiento suave -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        
+        for (const link of links) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const targetID = this.getAttribute("href");
+                const targetElement = document.querySelector(targetID);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        }
+    });
+</script>
+
+</body>
 </html>
