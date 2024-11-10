@@ -1,8 +1,3 @@
-/* Estilos generales */
-body {
-  background-color: #f8faf9; /* Color de fondo claro */
-}
-
 /* Variables de color */
 :root {
   --primary-color: #14578B;
@@ -14,44 +9,208 @@ body {
   --footer-text-color: #ffffff;
 }
 
-/* Reset general */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+/* Estilos globales para el cuerpo del documento */
+body {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100%;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    color: #003f5f;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700; /* Bold */
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600; /* Semi-bold */
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 400; /* Regular */
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 400; /* Regular */
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 400; /* Regular */
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 400; /* Regular */
+}
+
+/* Párrafo */
+p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Estilos para títulos y texto en tarjetas */
+.card-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0054b2;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.card-subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+}
+
+.card-text {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+/* Estilos de diseño para contenedores de tarjetas */
+.card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+}
+
+/* Efecto hover en tarjetas */
+.card:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Contenedor general y espacio entre secciones */
+.container, .wrapper {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Estilos adicionales para formulario compacto */
+.form-contact {
+    background-color: rgba(0, 84, 154, 0.1); /* Fondo semitransparente */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-contact h2 {
+    color: rgba(0, 84, 154, 1);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Botones */
+button[type="submit"] {
+    background-color: #0054b2;
+    color: #fff;
+    border: none;
+}
+
+button[type="reset"] {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+}
+
+/* Espaciado en botones */
+button[type="submit"], button[type="reset"] {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #004490;
+}
+
+button[type="reset"]:hover {
+    background-color: #c9302c;
 }
 
 /* Navbar */
 .navbar {
+  position: sticky; /* Asegura que la barra de navegación se quede pegada al hacer scroll */
+  top: 0; /* Se queda en la parte superior de la página */
   width: 100%;
-  padding: 1rem;
+  padding: 0.8rem; /* Reducir el padding */
   background-color: var(--primary-color);
-  z-index: 10;
+  z-index: 1050; /* Asegúrate de que esté por encima de otros elementos */
 }
 
-@media (max-width: 992px) { /* Aplica los cambios solo en pantallas pequeñas */
-  .navbar-collapse .form-control,
-  .navbar-collapse .btn {
-      margin-right: 10px; /* Espacio entre el input y el botón */
-  }
-  .navbar-collapse .d-flex {
-      justify-content: flex-start; /* Alinea el formulario a la izquierda */
-  }
+/* Estilo para el contenedor wrapper */
+.wrapper {
+  background-color: rgba(0, 84, 154, 1); /* Color de fondo */
+  padding: 16px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 500px; /* Borrar Ancho máximo */
+  margin: auto; /* Centrado en la página */
+  overflow: visible; /* Asegúrate de que el contenedor no restrinja el desplazamiento */
 }
 
-@media (min-width: 992px) { /* Aplica los cambios solo en pantallas pequeñas */
-  .navbar-collapse .form-control,
-  .navbar-collapse .btn {
-      margin-right: 10px; /* Espacio entre el input y el botón */
-  }
+/* Navbar */
+.form-contact {
+  background-color: rgba(238, 238, 238, 1);
+  border-radius: 16px;
 }
-    
-.navbar-toggler{
+
+/* Estilos específicos para el formulario de búsqueda */
+.search-form {
+  max-width: 200px;  /* Limitar el ancho del formulario de búsqueda */
+}
+
+.search-input {
+  width: 80%;  /* Ajustar el tamaño del campo de entrada */
+  padding: 5px 10px;  /* Ajustar el relleno */
+}
+
+.search-button {
+  padding: 5px 15px;  /* Ajustar el tamaño del botón */
+}
+
+.navbar-toggler {
   background-color: #e2e6ea;
   color: white;
 }
+
 .navbar .container-fluid {
   max-width: 100%;
   padding: 0;
@@ -63,13 +222,13 @@ body {
   align-items: center;
 }
 
+.sticky-top {
+  z-index: 1050; /* Asegúrate de que esté por encima de otros elementos */
+}
+
 .navbar-nav .nav-item {
   margin: 0 5px;
   width: 100%;
-}
-
-.navbar-brand {
-  margin: 0 10px;
 }
 
 .nav-link {
@@ -79,7 +238,8 @@ body {
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
   font-weight: 600;
-  padding: 10px 15px;
+  padding: 6px 12px; /* Reducción de tamaño de los enlaces */
+  
 }
 
 .nav-link:hover,
@@ -88,132 +248,254 @@ body {
   background-color: rgba(255, 204, 0, 0.1);
 }
 
-/* Footer */
+/* Estilos específicos para el formulario de búsqueda en la navbar */
+.navbar .navbar-form {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-form .form-control {
+  width: 200px; /* Reducir el ancho del campo de búsqueda */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.navbar .navbar-form .btn {
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Evitar que los estilos globales afecten el formulario de búsqueda */
+.navbar .navbar-form input.form-control,
+.navbar .navbar-form button.btn {
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #ccc; /* Borde gris claro */
+}
+
+.navbar .navbar-form button.btn-outline-success {
+  color: #28a745; /* Color del texto del botón */
+  border-color: #28a745; /* Color del borde del botón */
+}
+
+.navbar .navbar-form button.btn-outline-success:hover {
+  background-color: #28a745; /* Fondo verde al pasar el cursor */
+  color: white; /* Color de texto blanco al pasar el cursor */
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
 footer {
   background-color: var(--footer-bg);
   color: var(--footer-text-color);
-  padding: 20px 0;
-  width: 100%;
+  padding: 15px 0;  /* Padding ajustado para el footer */
   text-align: center;
-  position: relative;
-  background-image: url('/ruta/a/tu/imagen.jpg'); /* Ruta de la imagen */
-  background-size: cover;
-  background-position: center;
-}
-
-footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-footer .container-fluid,
-footer .row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-}
-
-footer .col-xs-12, footer .col-sm-3, footer .col-md-2, footer .col-12 {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 5px;
+  width: 100%;
+  margin-top: auto; /* Empuja el footer hacia abajo */
+  margin-bottom: 0; /* Elimina espacio debajo del footer */
 }
 
-footer .social {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+footer .container-fluid {
+  padding: 0; /* Elimina el padding extra */
+  margin-bottom: 0; /* Elimina el margen inferior */
+  width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
-footer .social a {
-  color: #fff;
-  font-size: 24px;
-  margin: 0 15px;
-  transition: color 0.3s ease;
-}
-
-footer .social a:hover {
-  color: #ffcc00;
-}
-
-footer .autoria {
+footer .content {
   font-size: 14px;
-  color: #ffffff;
-  font-family: 'Roboto', serif;
-  font-weight: 400;
-  padding: 10px 15px;
-  text-align: center;
-  width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* Estilo para imágenes fluidas */
-.img-responsive {
-  max-width: 100%;
-  height: auto;
+footer, footer * {
+  margin: 0; /* Eliminar márgenes */
 }
 
-/* Ajuste de contenedores para evitar desbordamiento */
-.content {
-  word-wrap: break-word;
-  overflow: hidden;
-  padding: 10px;
+
+
+/* Estilos globales para el cuerpo del documento, excluyendo el footer */
+body :not(footer) {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilo de texto centrado */
-.text-center {
-  font-size: 16px;
-  margin-top: 15px;
-  color: #ffffff;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 600;
-  padding: 10px 15px;
+/* Encabezados fuera del footer */
+body :not(footer) h1,
+body :not(footer) h2,
+body :not(footer) h3,
+body :not(footer) h4,
+body :not(footer) h5,
+body :not(footer) h6 {
+    font-family: 'Roboto Slab', serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    color: #003f5f;
+}
+
+body :not(footer) h1 {
+    font-size: 36px;
+    font-weight: 700; /* Bold */
+}
+
+body :not(footer) h2 {
+    font-size: 32px;
+    font-weight: 600; /* Semi-bold */
+}
+
+body :not(footer) h3 {
+    font-size: 28px;
+    font-weight: 400; /* Regular */
+}
+
+body :not(footer) h4 {
+    font-size: 24px;
+    font-weight: 400; /* Regular */
+}
+
+body :not(footer) h5 {
+    font-size: 20px;
+    font-weight: 400; /* Regular */
+}
+
+body :not(footer) h6 {
+    font-size: 18px;
+    font-weight: 400; /* Regular */
+}
+
+/* Párrafos fuera del footer */
+body :not(footer) p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    color: #fdfdfd;
+    line-height: 1.6;
+}
+
+/* Estilos para títulos y texto en tarjetas, excluyendo el footer */
+body :not(footer) .card-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0054b2;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+body :not(footer) .card-subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+}
+
+body :not(footer) .card-text {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+/* Estilos de diseño para contenedores de tarjetas fuera del footer */
+body :not(footer) .card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+}
+
+body :not(footer) .card:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Botones */
+button[type="submit"] {
+    background-color: #0054b2;
+    color: #fff;
+    border: none;
+}
+
+button[type="reset"] {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+}
+
+button[type="submit"], button[type="reset"] {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #004490;
+}
+
+button[type="reset"]:hover {
+    background-color: #c9302c;
+}
+
+/* Redes sociales en el footer */
+footer .redes-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  color: #fafafa;
+}
+
+footer .redes-social a {
+  color: #fafafa;
+  font-size: 18px; /* Reducción de tamaño de los íconos */
+  margin: 0 10px;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
-/* Asegurando que las columnas se ajusten bien */
-.row {
-  display: flex;
-  flex-wrap: wrap;
+footer .redes-social a:hover {
+  color: var(--hover-color);
 }
 
-.col-xs-12, .col-sm-6, .col-md-8, .col-md-2 {
-  padding: 0 10px; /* Agrega un pequeño padding para evitar el desbordamiento */
+/* Ajustes específicos en dispositivos pequeños */
+@media (max-width: 576px) {
+  footer .content {
+    font-size: 12px;
+  }
+  footer .redes-social a {
+    font-size: 18px;
+  }
 }
 
-/* Media Queries */
+/* Media Queries adicionales */
 @media (max-width: 768px) {
   .content {
-    font-size: 14px; /* Reducir el tamaño de la fuente si es necesario */
+    font-size: 14px;
   }
 
-  .social a {
-    font-size: 20px; /* Reducir el tamaño de los íconos si es necesario */
-  }
-
-  footer .col-xs-12, footer .col-sm-3, footer .col-md-2 {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  footer .col-md-8 {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  footer .social {
-    flex-wrap: wrap; /* Ajusta el diseño de los iconos en pantallas pequeñas */
+  footer .social a {
+    font-size: 20px;
   }
 }
 
-/* Ajustes para pantallas grandes */
 @media (min-width: 992px) and (max-width: 1148px) {
   .reseña-content {
     flex-direction: column;
@@ -224,125 +506,4 @@ footer .autoria {
     max-width: 100%;
     margin: 0;
   }
-
-  .reseña-text {
-    padding: 0 16px;
-  }
-
-  .inicio-title {
-    font-size: 36px;
-  }
-
-  .inicio-subtitle {
-    font-size: 16px;
-  }
-
-  .inicio-text {
-    font-size: 14px;
-    font-family: 'Roboto',serif;
-  }
-
-  .titulo-principal {
-    font-size: 36px;
-    font-family: 'Roboto',serif;
-  }
 }
-
-
-/* Responsividad en pantallas pequeñas */
-@media (max-width: 768px) {
-  footer .social {
-    flex-wrap: wrap;  /* Los íconos se ajustan a una nueva fila si es necesario */
-  }
-
-  footer .social a {
-    font-size: 20px; /* Reducir tamaño de íconos */
-    margin: 10px 5px;
-  }
-}
-footer .social {
-  display: flex;
-  justify-content: center;  /* Centra los íconos horizontalmente */
-  margin-top: 20px;
-}
-
-footer .social a {
-  color: #fff;
-  font-size: 24px;
-  margin: 0 15px;
-  transition: color 0.3s ease;
-}
-
-footer .social a:hover {
-  color: #ffcc00;  /* Color al hacer hover */
-}
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 768px) {
-  footer .social {
-    flex-wrap: wrap;  /* Los íconos se ajustan a una nueva fila si es necesario */
-  }
-
-  footer .social a {
-    font-size: 20px; /* Reducir tamaño de íconos */
-    margin: 10px 5px;
-  }
-  /* Estilo del logo centrado con tamaño mínimo y máximo */
-.centered-logo {
-  width: 150px; /* Tamaño base del logo */
-  height: auto; /* Mantiene la proporción */
-  max-width: 250px; /* Tamaño máximo del logo */
-  min-width: 100px; /* Tamaño mínimo del logo */
-  margin: 0 auto; /* Centrado horizontal */
-  display: block; /* Asegura que el logo esté centrado en su contenedor */
-}
-
-
-.col-sm-3.col-md-3 {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente si es necesario */
-
-    .container-fluid {
-      margin: 0;
-      padding: 0; /* Centra horizontalmente */
-      width: 100; /* Centra verticalmente si es necesario */
-  }
-
-  scroll-behavior: smooth;
-} 
-.h1{
-
-    font-size: 36px;
-    margin-top: 15px;
-    color: #14578B;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    padding: 10px 15px;
-    transition: color 0.3s ease;
-    
-    .custom-heading {
-      font-size: 36px; /* Cambia el tamaño a 36px */
-      color: #333333; /* Cambia el color del texto */
-      font-weight: bold; /* Estilo de fuente */
-  }
-  
-  .custom-paragraph {
-      font-size: 18px; /* Tamaño de la fuente para el párrafo */
-      color: #555555;
-      line-height: 1.5;
-  }
-  .custom-heading {
-    font-size: 36px !important;
-    color: #333 !important;
-}
-
-.custom-paragraph {
-    font-size: 18px !important;
-    color: #555 !important;
-}
-
-  
-}
-}
-
