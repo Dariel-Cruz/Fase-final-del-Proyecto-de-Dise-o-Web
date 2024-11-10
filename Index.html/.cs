@@ -1,3 +1,75 @@
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio">Mi Sitio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio" data-bs-toggle="collapse" data-bs-target="#navbarNav">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#acerca" data-bs-toggle="collapse" data-bs-target="#navbarNav">ACERCA DE NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#programas" data-bs-toggle="collapse" data-bs-target="#navbarNav">PROGRAMAS ACADÉMICOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#actividades" data-bs-toggle="collapse" data-bs-target="#navbarNav">ACTIVIDADES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto" data-bs-toggle="collapse" data-bs-target="#navbarNav">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Script para desplazamiento suave -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        
+        for (const link of links) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const targetID = this.getAttribute("href");
+                const targetElement = document.querySelector(targetID);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        }
+    });
+
+    
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarCollapse = document.getElementById("navbarNav"); // Ajusta el ID al de tu collapse
+    const navbarLinks = navbarCollapse.querySelectorAll("a.nav-link");
+
+    navbarLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            // Si el menú está en modo collapse (visible en pantallas pequeñas)
+            if (window.getComputedStyle(navbarCollapse).display === "block") {
+                // Cierra el menú
+                $('.navbar-collapse').collapse('hide');
+            }
+        });
+    });
+});
+
+</script>
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,60 +105,73 @@
         </div>
     </div>
 </div>
+    <!-- Aquí inicia la Navbar -->
+    <nav id="programas" class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-3 col-lg-6 col-lg-12">
+                
+            </div>
+            <a class="navbar-brand" href="#inicio"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<nav id="programas" class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#inicio"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <div class="collapse navbar-collapse flex-column flex-lg-row" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">INICIO <span class="sr-only">(actual)</span></a>
 
-        <div class="collapse navbar-collapse flex-column flex-lg-row" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#inicio">INICIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#acerca">ACERCA DE NOSOTROS</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownAcademicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PROGRAMAS ACADÉMICOS
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
-                        <a class="dropdown-item" href="#tecnologia">CURSOS</a>
-                        <a class="dropdown-item" href="#mantenimiento">Mantenimiento y Reparación de Computadoras</a>
-                        <a class="dropdown-item" href="#decoracion">Decoración de Eventos</a>
-                        <a class="dropdown-item" href="#gastronomia">Gastronomía</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#actividades" id="navbarDropdownActividades" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ACTIVIDADES
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownActividades">
-                        <a class="dropdown-item" href="#noticias">Noticias</a>
-                        <a class="dropdown-item" href="#eventos">Eventos</a>
-                        <a class="dropdown-item" href="#videos">Sesión de videos</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#matriculate">MATRICÚLATE</a>
-                </li>
-            </ul>
-            <form class="d-flex ms-auto" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+                    </li>
+                     <li class="nav-item ">
+                        <a class="nav-link dropdown-toggle" href="#acerca"> ACERCA DE NOSOTROS</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownAcademicos"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PROGRAMAS ACADÉMICOS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
+                            <a class="dropdown-item" href="#tecnologia">CURSOS</a>
+                            <a class="dropdown-item" href="#mantenimiento">Mantenimiento y Reparación de Computadoras</a>
+                            <a class="dropdown-item" href="#decoracion">Decoración de Eventos</a>
+                            <a class="dropdown-item" href="#gastronomia">Gastronomía</a>
+
+                        </div>
+                    </li>
+
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#actividades" id="navbarDropdownAcademicos"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ACTIVIDADES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
+                            <a class="dropdown-item" href="#noticias">Noticias</a>
+                            <a class="dropdown-item" href="#eventos">Eventos</a>
+                            <a class="dropdown-item" href="#videos">Sesión de videos</a>
+
+
+
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#matriculate">MATRICÚLATE</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto" role="search">
+    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Buscar</button>
+</form>
+
+            </div>
         </div>
-    </div>
-</nav>
-
-
+    </nav>
 
 
     <!-- Inicia el Hero -->
@@ -772,85 +857,5 @@
         });
     });
 </script>
-
-<nav id="programas" class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#inicio">Marca</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse flex-column flex-lg-row" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#inicio">INICIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#acerca">ACERCA DE NOSOTROS</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownAcademicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PROGRAMAS ACADÉMICOS
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
-                        <a class="dropdown-item" href="#tecnologia">CURSOS</a>
-                        <a class="dropdown-item" href="#mantenimiento">Mantenimiento y Reparación de Computadoras</a>
-                        <a class="dropdown-item" href="#decoracion">Decoración de Eventos</a>
-                        <a class="dropdown-item" href="#gastronomia">Gastronomía</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#actividades" id="navbarDropdownActividades" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ACTIVIDADES
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownActividades">
-                        <a class="dropdown-item" href="#noticias">Noticias</a>
-                        <a class="dropdown-item" href="#eventos">Eventos</a>
-                        <a class="dropdown-item" href="#videos">Sesión de videos</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#matriculate">MATRICÚLATE</a>
-                </li>
-            </ul>
-            <form class="d-flex ms-auto" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-        </div>
-    </div>
-</nav>
-
-<!-- Script JavaScript para cerrar el menú colapsado según el comportamiento deseado -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Cerrar menú al hacer clic en cualquier enlace que no tenga submenú
-        var navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle)');
-        navLinks.forEach(function (link) {
-            link.addEventListener('click', function () {
-                var navbarCollapse = document.querySelector('.navbar-collapse');
-                if (navbarCollapse.classList.contains('show')) {
-                    $('.navbar-collapse').collapse('hide');
-                }
-            });
-        });
-
-        // Cerrar el menú colapsado y el submenú cuando se haga clic en un elemento del submenú
-        var dropdownItems = document.querySelectorAll('.dropdown-menu .dropdown-item');
-        dropdownItems.forEach(function (item) {
-            item.addEventListener('click', function () {
-                var navbarCollapse = document.querySelector('.navbar-collapse');
-                if (navbarCollapse.classList.contains('show')) {
-                    $('.navbar-collapse').collapse('hide'); // Cierra el menú principal
-                }
-            });
-        });
-    });
-</script>
-
 </body>
 </html>

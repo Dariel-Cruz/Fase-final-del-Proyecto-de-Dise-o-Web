@@ -31,6 +31,27 @@ body {
   z-index: 10;
 }
 
+@media (max-width: 992px) { /* Aplica los cambios solo en pantallas pequeñas */
+  .navbar-collapse .form-control,
+  .navbar-collapse .btn {
+      margin-right: 10px; /* Espacio entre el input y el botón */
+  }
+  .navbar-collapse .d-flex {
+      justify-content: flex-start; /* Alinea el formulario a la izquierda */
+  }
+}
+
+@media (min-width: 992px) { /* Aplica los cambios solo en pantallas pequeñas */
+  .navbar-collapse .form-control,
+  .navbar-collapse .btn {
+      margin-right: 10px; /* Espacio entre el input y el botón */
+  }
+}
+    
+.navbar-toggler{
+  background-color: #e2e6ea;
+  color: white;
+}
 .navbar .container-fluid {
   max-width: 100%;
   padding: 0;
@@ -290,4 +311,38 @@ footer .social a:hover {
 
   scroll-behavior: smooth;
 } 
+.h1{
+
+    font-size: 36px;
+    margin-top: 15px;
+    color: #14578B;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    
+    .custom-heading {
+      font-size: 36px; /* Cambia el tamaño a 36px */
+      color: #333333; /* Cambia el color del texto */
+      font-weight: bold; /* Estilo de fuente */
+  }
+  
+  .custom-paragraph {
+      font-size: 18px; /* Tamaño de la fuente para el párrafo */
+      color: #555555;
+      line-height: 1.5;
+  }
+  .custom-heading {
+    font-size: 36px !important;
+    color: #333 !important;
 }
+
+.custom-paragraph {
+    font-size: 18px !important;
+    color: #555 !important;
+}
+
+  
+}
+}
+
