@@ -10,14 +10,15 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+
 
     <!-- Archivo CSS personalizado -->
     <link rel="stylesheet" href="web.css">
 </head>
 <body>
    <!-- Contenedor de Logos -->
-<div class="container-fluid mb-3 mt-3">
+<div class="container-fluid ">
     <div class="row align-items-center">
         <div class="col-sm-3 col-md-3 text-center">
             <img class="img-fluid" src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png" alt="Logo Inatec Blanco">
@@ -78,20 +79,19 @@
                     <a class="nav-link" href="#matriculate">MATRICÚLATE</a>
                 </li>
             </ul>
-            <form class="d-flex ms-auto" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <form class="d-flex ms-auto navbar-form search-form" role="search">
+                <input class="form-control me-2 search-input" type="search" placeholder="Buscar" aria-label="Buscar" name="query">
+                <button class="btn btn-outline-success search-button" type="submit">Buscar</button>
             </form>
+            
         </div>
     </div>
-</nav>
-
-
-
+</nav> 
 
     <!-- Inicia el Hero -->
+
     <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner mt-1">
+        <div class="carousel-inner mt-1 mb-4">
             <div class="carousel-item active">
                 <img src="Hero/banner-portal-E.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 1">
             </div>
@@ -114,25 +114,23 @@
         </a>
     </div>
 
-
-
     <!-- Sección de Inicio -->
-    <div id="inicio" class="inicio container-fluid mt-3">
-        <h1 class="titulo-principal text-center">Bienvenidos a la Escuela Técnica de San Rafael del Sur</h1>
+    <div id="inicio" class="inicio container-fluid mt-4 mb-4">
+        <h1 class="titulo-principal text-center mt-4 mb-4">BIENVENIDOS A LA ESCUELA DE OFICIO SAN RAFAEL </h1>
     </div>
     <div class="row align-items-center">
-        <!-- Contenedor para la imagen y la reseña histórica -->
+
         <div class="col-lg-6 col-md-6 col-sm-12">
             <img src="Inicio/327713114_5969093676492718_2005376533459337805_n (3).webp" class="img-fluid rounded mb-3"
                 alt="Imagen de la Escuela Técnica de San Rafael del Sur">
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-12">
-            <h3 class="inicio-subtitle text-center">Reseña Histórica</h3>
+            <h3 class="sub-titulo text-center ">Reseña Histórica</h3>
             <div class="reseña-wrapper">
                 <div class="reseña-content">
                     <div class="reseña-text">
-                        <p class="inicio-text text-justify">
+                        <p class="custom-paragrahp  text-justify">
                             La Escuela Técnica de San Rafael del Sur fue fundada en 1985 con el objetivo de
                             proporcionar una educación técnica accesible y de calidad a los jóvenes de la región. La
                             creación de la institución fue una respuesta a la necesidad de formar a una nueva
@@ -165,19 +163,19 @@
             </div>
         </div>
     </div>
-    </div>
+</div>
 
     <!-- Sesión Acerca de nosotros -->
 
-    <div id="acerca" class="container  mb-4 mt-4">
-        <h2 class="sesion-title text-left">ACERCA DE NOSOTROS</h2>
+    <div id="acerca" class="container-fluid">
+        <h2 class="sesion-titulo text-left mb-4 mt-4" >ACERCA DE NOSOTROS</h2>
         <div class="row justify-content-center">
             <!-- Primera tarjeta con imagen a la izquierda -->
             <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="Acerca de nosotros/riug9o0p.webp" class="card-img-top img-fluid" alt="Imagen Izquierda">
                     <div class="card-body text-center">
-                        <h5 class="card-title">MISIÓN</h5>
+                        <h5 class="card-title mb-4">MISIÓN</h5>
                         <p class="card-text text-justify">"Formar profesionales altamente capacitados en diversas áreas
                             tecnológicas, promoviendo una educación práctica y accesible que impulse el desarrollo de
                             habilidades técnicas y éticas. Nuestra misión es preparar a nuestros estudiantes para
@@ -193,7 +191,7 @@
                 <div class="card">
                     <img src="Acerca de nosotros/2xlmkxma.webp" class="card-img-top img-fluid" alt="Imagen Derecha">
                     <div class="card-body text-center">
-                        <h5 class="card-title">VISIÓN</h5>
+                        <h5 class="card-title mb-3">VISIÓN</h5>
                         <p class="card-text text-justify">"Ser un referente nacional en la educación tecnológica y
                             formación de oficios, destacándonos por nuestra calidad educativa, innovación y compromiso
                             con el desarrollo profesional de nuestros estudiantes. Aspiramos a empoderar a nuestros
@@ -205,10 +203,11 @@
             </div>
         </div>
     </div>
-<!-- Curso de Mantenimiento y Reparación de Computadoras-->
-<h3 class="card-title">MANTENIMIENTO Y REPARACIÓN DE PC</h3>
 
-<div id="mantenimiento" class="row container-fluid w-100 my-4">
+<!-- Curso de Mantenimiento y Reparación de Computadoras-->
+<h3 class="card-title mb-4 mt-4">MANTENIMIENTO Y REPARACIÓN DE PC</h3>
+
+<div id="mantenimiento" class="row container-fluid w-100 my-4 mb-4 mt-4">
     <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="card">
             <img src="Ofertas Académicas/Cur/2/1.webp" class="card-img-top img-fluid" alt="Imagen de curso de mantenimiento" aria-label="Imagen de curso de mantenimiento">
@@ -264,8 +263,8 @@
     </div>  
 </div>
    <!-- Curso de Gastronomía -->
-            <h3 class="card-title text-center">GASTRONOMÍA</h3>
-            <div id="gastronomia" class="container-fluid">
+            <h3 class="card-title text-center mb-4 mt-4">GASTRONOMÍA</h3>
+            <div id="gastronomia" class="container-fluid mb-4 mt-4">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="card">
@@ -324,9 +323,9 @@
             </div> <!-- Cierre del contenedor -->
 
             <!-- Curso de Decoración de Eventos -->
-            <h3 class="card-title text-center">DECORACIÓN DE EVENTOS </h3>
+            <h3 class="card-title text-center mt-4 mb-4">DECORACIÓN DE EVENTOS </h3>
 
-            <div id="decoracion" class="container-fluid">
+            <div id="decoracion" class="container-fluid mt-4 mb-4">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="card">
@@ -364,8 +363,8 @@
                     </div>
                     
                      <!-- Sesión de Actividades -->
-            <h3 class="card-title text-center">NOTICIAS</h3>
-            <div id="noticias" class="container-fluid">
+            <h3 class="card-title text-center mt-4 mb-4">NOTICIAS</h3>
+            <div id="noticias" class="container-fluid mb-4 mt-4">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="card">
@@ -425,8 +424,8 @@
 
              <!-- Sesión de Eventos-->
 
-             <h3 class="card-title text-center">EVENTOS</h3>
-             <div id="eventos" class="container-fluid">
+             <h3 class="card-title text-center mt-4 mb-4">EVENTOS</h3>
+             <div id="eventos" class="container-fluid mb-4 mt-4">
                  <div class="row">
                      <div class="col-lg-4 col-md-4 col-sm-12">
                          <div class="card">
@@ -485,64 +484,66 @@
              </div> <!-- Cierre del contenedor -->
  
             
-             <h3 class="card-title text-center">SESIÓN DE VIDEOS</h3>
+             <h3 class="card-title text-center mt-4 mb-4">SESIÓN DE VIDEOS</h3>
 
-                    <di id="videos" class="container-fluid">
-                        <div class="row">
-                            <!-- Primer video y descripción -->
-                            <div class="col-lg-3 col-md-12 mb-4">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <video src="Ofertas Académicas/Gastronomía/3/669274380924641.mp4"
-                                        class="card-img-top img-fluid" autoplay loop muted poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
-                                    </video>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Curso de Gastronomía</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
-                                    <p class="card-text text-justify">
-                                        Este curso introduce a los estudiantes en técnicas de cocina clásica, permitiéndoles revivir y experimentar la gastronomía de décadas pasadas.
-                                    </p>
-                                </div>
-                            </div>     
-                                    <!-- Segundo video y descripción -->
-                                    <div class="col-lg-6 col-md-12 mb-4">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <video src="Ofertas Académicas/Gastronomía/3/669274380924641.mp4"
-                                                class="card-img-top img-fluid" autoplay loop muted poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
-                                            </video>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title ">Curso de Gastronomía</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
-                                            <p class="card-text text-justify">
-                                                Este curso introduce a los estudiantes en técnicas de cocina clásica, permitiéndoles revivir y experimentar la gastronomía de décadas pasadas.
-                                            </p>
-                                        </div>
-                                    </div>
-                            
-                                    <!-- Tercer video y descripción -->
-                                    <div class="col-lg-3 col-md-12 mb-4">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <video src="Ofertas Académicas/Gastronomía/3/669274380924641.mp4"
-                                                class="card-img-top img-fluid" autoplay loop muted poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
-                                            </video>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Curso de Gastronomía</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
-                                            <p class="card-text text-justify">
-                                                Este curso introduce a los estudiantes en técnicas de cocina clásica, permitiéndoles revivir y experimentar la gastronomía de décadas pasadas.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+             <div id="videos" class="container-fluid mb-4 mt-4">
+                 <div class="row d-flex align-items-stretch">
+                     <!-- Primer video y descripción -->
+                     <div class="col-lg-2 col-md-12 mb-4">
+                         <div class="embed-responsive embed-responsive-16by9">
+                             <video src="Actividades/Videos/AQOxNzWFgv6YU7T9Cq57MeTzSGF07EzYduyYGn7AB5SI134v-ki7tFlZ9mx9DRzxV7kXRSKTQs6GUGyi3hPD-FzJ.mp4"
+                                 class="card-img-top img-fluid" autoplay muted controls poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
+                             </video>
+                         </div>
+                         <div class="card-body">
+                             <h5 class="card-title text-center">Curso de Gastronomía</h5>
+                             <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
+                             <p class="card-text text-justify">
+                                 Este curso introduce a los estudiantes en técnicas de cocina clásica, permitiéndoles revivir y experimentar la gastronomía de décadas pasadas.
+                             </p>
+                         </div>
+                     </div>
+             
+                     <!-- Segundo video y descripción (ajustado con margen negativo) -->
+                     <div class="col-lg-8 col-md-12 mb-4 mt-n3">
+                         <div class="embed-responsive embed-responsive-16by9">
+                             <video src="Actividades/Videos/669274380924641.mp4"
+                                 class="card-img-top img-fluid" autoplay muted controls poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
+                             </video>
+                         </div>
+                         <div class="card-body">
+                             <h5 class="card-title">Curso de Gastronomía</h5>
+                             <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
+                             <p class="card-text text-justify">
+                                 Este curso introduce a los estudiantes en técnicas de cocina clásica, permitiéndoles revivir y experimentar la gastronomía de décadas pasadas.
+                             </p>
+                         </div>
+                     </div>
+             
+                     <!-- Tercer video y descripción -->
+                     <div class="col-lg-2 col-md-12 mb-4">
+                         <div class="embed-responsive embed-responsive-16by9">
+                             <video src="Actividades/Videos/AQOX3V9Cs8tRnde_FMc-zEt0kQeo2cNphBg0F3r4aGxD96EsqYYdxd-pE2ITCV104itou92CDAq6HNWNOduaUfJK.mp4"
+                                 class="card-img-top img-fluid" autoplay muted controls poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
+                             </video>
+                         </div>
+                         <div class="card-body">
+                             <h5 class="card-title">Curso de Gastronomía</h5>
+                             <h6 class="card-subtitle mb-2 text-muted">Exploración y práctica culinaria</h6>
+                             <p class="card-text text-justify">
+                                 Este curso introduce a los estudiantes en técnicas de cocina clásica, permitiéndoles revivir y experimentar la gastronomía de décadas pasadas.
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             
 
                             <!-- Carousel para la sección de matrícula-->
-                            <div id="matriculate" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
+                            <div id="matriculate" class="carousel slide mt-4 mb-4" data-ride="carousel">
+                                <div class="carousel-inner mt-4 mb-4">
                                     <div class="carousel-item active">
-                                        <img src="Hero/banner-portal-E.jpg" class="d-block w-100 img-fluid"
+                                        <img src="Matricúlate/1045vxfo.png" class="d-block w-100 img-fluid"
                                             alt="Descripción de la imagen 1">
                                     </div>
                                     <div class="carousel-item">
@@ -565,157 +566,153 @@
                                     <span class="sr-only">Siguiente</span>
                                 </a>
                             </div>
+<!-- Contenedor Wrapper -->
+<div class="wrapper container mt-4 mb-4">
+    <div id="contacto" class="form-contact mb-2 my-2  mx-4 p-3 shadow-sm">
+        <h2 class="text-center mb-2">Formulario de Registro</h2>
+        <form>
+            <!-- Nombre y Apellido -->
+            <div class="row g-1">
+                <div class="col-12 col-sm-6">
+                    <label class="form-label" for="input_name">Nombre:</label>
+                    <input type="text" id="input_name" class="form-control form-control-sm" required>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="form-label" for="input_lastname">Apellido:</label>
+                    <input type="text" id="input_lastname" class="form-control form-control-sm" required>
+                </div>
+            </div>
 
-                            <!--Aquí comienza el formulario de contacto-->
-                            <div id="contacto" class="container-fluid mt-5 mb-5">
-                                <h2>Formulario de Registro</h2>
-                                <form>
-                                    <!-- Fila para Nombre y Apellido -->
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label class="form-label" for="input_name">Nombre:</label>
-                                            <input type="text" id="input_name" class="form-control" required>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label class="form-label" for="input_lastname">Apellido:</label>
-                                            <input type="text" id="input_lastname" class="form-control" required>
-                                        </div>
-                                    </div>
+            <!-- Email -->
+            <div class="mb-1">
+                <label class="form-label" for="input_email">Email:</label>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-text">@</span>
+                    <input type="email" id="input_email" class="form-control form-control-sm" required>
+                </div>
+            </div>
 
-                                    <!-- Campo de Email -->
-                                    <label class="form-label" for="input_email">Email:</label>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text">@</span>
-                                        <input type="email" id="input_email" class="form-control" required>
-                                    </div>
+            <!-- Teléfono, País, Ciudad y Fecha -->
+            <div class="row g-1">
+                <div class="col-12 col-md-3">
+                    <label class="form-label" for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" class="form-control form-control-sm" required>
+                </div>
+                <div class="col-12 col-md-3">
+                    <label class="form-label" for="pais">País:</label>
+                    <input type="text" id="pais" class="form-control form-control-sm" list="paises" required>
+                    <datalist id="paises">
+                        <option value="España">
+                        <option value="Argentina">
+                        <option value="México">
+                        <option value="Colombia">
+                        <option value="Chile">
+                    </datalist>
+                </div>
+                <div class="col-12 col-md-3">
+                    <label class="form-label" for="ciudad">Ciudad:</label>
+                    <select id="ciudad" class="form-select form-select-sm" required>
+                        <option value="">Seleccione</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="bogota">Bogotá</option>
+                        <option value="mexico">Mexico D.C.</option>
+                        <option value="buenos_aires">Buenos Aires</option>
+                        <option value="santiago">Santiago</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-3">
+                    <label class="form-label" for="fecha">Fecha nacimiento:</label>
+                    <input type="date" id="fecha" class="form-control form-control-sm" required>
+                </div>
+            </div>
 
-                                    <!-- Fila para Teléfono, País, Ciudad y Fecha de Nacimiento -->
-                                    <div class="row">
-                                        <div class="col-md-3 mb-3">
-                                            <label class="form-label" for="telefono">Teléfono:</label>
-                                            <input type="tel" id="telefono" class="form-control" required>
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <label class="form-label" for="pais">País:</label>
-                                            <input type="text" id="pais" class="form-control" list="paises" required>
-                                            <datalist id="paises">
-                                                <option value="España">
-                                                <option value="Argentina">
-                                                <option value="México">
-                                                <option value="Colombia">
-                                                <option value="Chile">
-                                            </datalist>
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <label class="form-label" for="ciudad">Ciudad:</label>
-                                            <select id="ciudad" class="form-select mb-3" required>
-                                                <option value="">Seleccione una ciudad</option>
-                                                <option value="madrid">Madrid</option>
-                                                <option value="bogota">Bogotá</option>
-                                                <option value="mexico">Mexico D.C.</option>
-                                                <option value="buenos_aires">Buenos Aires</option>
-                                                <option value="santiago">Santiago de Chile</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <label class="form-label" for="fecha">Fecha de nacimiento:</label>
-                                            <input type="date" id="fecha" class="form-control" required>
-                                        </div>
-                                    </div>
+            <!-- Color, Conocimientos y Foto -->
+            <div class="row g-1">
+                <div class="col-12 col-md-4">
+                    <label class="form-label" for="color">Color:</label>
+                    <input type="color" id="color" class="form-control form-control-sm" required>
+                </div>
+                <div class="col-12 col-md-4">
+                    <label class="form-label" for="conocimientos">Nivel:</label>
+                    <input type="range" id="conocimientos" class="form-range form-control-sm" min="1" max="10" required>
+                </div>
+                <div class="col-12 col-md-4">
+                    <label class="form-label" for="foto">Foto:</label>
+                    <input type="file" id="foto" class="form-control form-control-sm">
+                </div>
+            </div>
 
-                                    <!-- Fila para Color, Nivel de Conocimientos y Foto de Perfil -->
-                                    <div class="row">
-                                        <div class="col-md-4 mb-3">
-                                            <label class="form-label" for="color">Color de identificación:</label>
-                                            <input type="color" id="color" class="form-control form-control-color"
-                                                required>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <label class="form-label" for="conocimientos">Nivel de
-                                                conocimientos:</label>
-                                            <input type="range" id="conocimientos" class="form-range" min="1" max="10"
-                                                required>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <label class="form-label" for="foto">Foto de perfil:</label>
-                                            <input type="file" id="foto" class="form-control">
-                                        </div>
-                                    </div>
+            <!-- Intereses (checkboxes) -->
+            <div class="mb-2">
+                <label class="form-label d-block">Intereses:</label>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" id="tecnologia" value="tecnologia" class="form-check-input">
+                    <label for="tecnologia" class="form-check-label">Tecnología</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" id="negocios" value="negocios" class="form-check-input">
+                    <label for="negocios" class="form-check-label">Negocios</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" id="arte" value="arte" class="form-check-input">
+                    <label for="arte" class="form-check-label">Arte</label>
+                </div>
+            </div>
 
-                                    <!-- Fila para Intereses (checkboxes) -->
-                                    <div class="row text-center">
-                                        <div class="col-md-4 offset-md-4 mb-3">
-                                            <label for="intereses">Intereses:</label><br>
-                                            <div class="form-check form-check-inline">
-                                                <input type="checkbox" id="tecnologia" value="tecnologia"
-                                                    class="form-check-input">
-                                                <label for="tecnologia" class="form-check-label">Tecnología</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input type="checkbox" id="negocios" value="negocios"
-                                                    class="form-check-input">
-                                                <label for="negocios" class="form-check-label">Negocios</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input type="checkbox" id="arte" value="arte" class="form-check-input">
-                                                <label for="arte" class="form-check-label">Arte</label>
-                                            </div>
-                                        </div>
-                                    </div>
+            <!-- Comentarios -->
+            <div class="mb-2">
+                <label class="form-label" for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" class="form-control form-control-sm" rows="2"></textarea>
+            </div>
 
-                                    <!-- Área de texto para comentarios -->
-                                    <label class="form-label" for="comentarios">Comentarios adicionales:</label>
-                                    <textarea id="comentarios" class="form-control mb-3" rows="4" cols="30"></textarea>
-
-                                    <!-- Botones de envío y cancelación -->
-                                    <div class="text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                                        <button type="reset" class="btn btn-danger btn-lg">Cancelar</button>
-                                    </div>
-                                </form>
-                            </div>
+            <!-- Botones -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+                <button type="reset" class="btn btn-danger btn-sm">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
+            <!-- Aquí comienza el Footer -->
 
                             <footer>
                                 <div class="container-fluid ultimod">
-                                  <div class="row">
-                                    <div class="col-xs-12 col-sm-3 col-md-2" style="padding-top: 5px">
-                                      <img class="img-responsive" src="Logos/inatec-logo-9518FD4AC8-seeklogo.com.png" alt="Logo Inatec Blanco"><br>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-8">
-                                      <div class="content text-center">
-                                        Capacitación y Educación Técnica Gratuita y de Calidad. <br>
-                                        Dirección: Centro Cívico Zumen, frente al Hospital Bertha Calderón, Managua. <br>
-                                        Teléfonos: Planta Central 2253-8830, Atención al Protagonista 2253-8888
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-xs-4 col-sm-4 col-md-4">
-                                        
+                                    <div class="row align-items-center text-center text-md-start">
+                                        <!-- Logo Inatec -->
+                                        <div class="col-12 col-sm-3 col-md-2 mt-3 mt-md-0">
+                                            <img class="img-fluid" src="Logos/Inatec.png" alt="Logo Inatec Blanco">
                                         </div>
-                                      </div>
-                                     <!-- Contenedor de los iconos de redes sociales -->
-<div class="social">
-    <a href="https://www.facebook.com/TecNacional" target="_blank" class="blanco">
-        <i class="bi bi-facebook"></i> <!-- Icono de Facebook -->
-    </a>
-    <a href="https://twitter.com/TecNacional" target="_blank" class="blanco">
-        <i class="bi bi-twitter"></i> <!-- Icono de Twitter -->
-    </a>
-    <a href="https://www.instagram.com/tecnacional/?hl=es" target="_blank" class="blanco">
-        <i class="bi bi-instagram"></i> <!-- Icono de Instagram -->
-    </a>
-    <a href="https://www.youtube.com/user/TecnologicoNacional" target="_blank" class="blanco">
-        <i class="bi bi-youtube"></i> <!-- Icono de YouTube -->
-    </a>
-</div>
+                            
+                                        <!-- Información de contacto y Redes Sociales -->
+                                        <div class="col-12 col-sm-6 col-md-8 mt-3 mt-md-0">
+                                            <div class="content mx-2">
+                                                <p>Capacitación y Educación Técnica Gratuita y de Calidad.</p>
+                                                <p>Dirección: Centro Cívico Zumen, frente al Hospital Bertha Calderón, Managua.</p>
+                                                <p>Teléfonos: Planta Central 2253-8830, Atención al Protagonista 2253-8888</p>
+                                            </div>
+                                            
+                                            <!-- Redes Sociales -->
+                                            <div class="redes-social mt-3">
+                                                <a href="https://www.facebook.com/TecNacional" target="_blank" class="blanco mx-2"><i class="bi bi-facebook"></i></a>
+                                                <a href="https://twitter.com/TecNacional" target="_blank" class="blanco mx-2"><i class="bi bi-twitter"></i></a>
+                                                <a href="https://www.instagram.com/tecnacional/?hl=es" target="_blank" class="blanco mx-2"><i class="bi bi-instagram"></i></a>
+                                                <a href="https://www.youtube.com/user/TecnologicoNacional" target="_blank" class="blanco mx-2"><i class="bi bi-youtube"></i></a>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- Logo Gobierno -->
+                                        <div class="col-12 col-sm-3 col-md-2 mt-3 mt-md-0">
+                                            <img src="Logos/Gobierno.png" class="img-fluid" alt="Logo Gobierno 2023">
+                                        </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-3 col-md-2">
-                                      <img src="Logos/gobierno-de-nicaragua-logo-1B0EAA59FF-seeklogo.com.png" class="img-responsive pull-right" alt="logo gobierno 2023">
+                            
+                                    <!-- Derechos reservados -->
+                                    <div class="autoria text-center mt-3">
+                                        <p>Todos los derechos reservados Tecnológico Nacional</p>
                                     </div>
-                                  </div>
-                                  <div class="autoria text-center azul">Todos los derechos reservados Tecnológico Nacional</div>
                                 </div>
-                              </footer>
-                              
+                            </footer>
+                            
            
                             <!-- Scripts de jQuery y Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -773,57 +770,7 @@
     });
 </script>
 
-<nav id="programas" class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#inicio">Marca</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse flex-column flex-lg-row" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#inicio">INICIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#acerca">ACERCA DE NOSOTROS</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#programas" id="navbarDropdownAcademicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PROGRAMAS ACADÉMICOS
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
-                        <a class="dropdown-item" href="#tecnologia">CURSOS</a>
-                        <a class="dropdown-item" href="#mantenimiento">Mantenimiento y Reparación de Computadoras</a>
-                        <a class="dropdown-item" href="#decoracion">Decoración de Eventos</a>
-                        <a class="dropdown-item" href="#gastronomia">Gastronomía</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#actividades" id="navbarDropdownActividades" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ACTIVIDADES
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownActividades">
-                        <a class="dropdown-item" href="#noticias">Noticias</a>
-                        <a class="dropdown-item" href="#eventos">Eventos</a>
-                        <a class="dropdown-item" href="#videos">Sesión de videos</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#matriculate">MATRICÚLATE</a>
-                </li>
-            </ul>
-            <form class="d-flex ms-auto" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-        </div>
-    </div>
-</nav>
 
 <!-- Script JavaScript para cerrar el menú colapsado según el comportamiento deseado -->
 <script>
