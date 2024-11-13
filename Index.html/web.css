@@ -8,7 +8,15 @@
   --footer-bg: #14578B;
   --footer-text-color: #ffffff;
 }
+body {
+  overflow-x: hidden;
+}
 
+/* Contenedor principal */
+#mantenimiento {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten a varias filas */
+}
 
 /* Estilos globales para el cuerpo del documento */
 body {
@@ -21,7 +29,7 @@ body {
     min-height: 100%;
 }
 
-/* Encabezados */
+/* Estilo para encabezados de títulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
     margin-top: 0.5em;
@@ -80,11 +88,23 @@ p {
     line-height: 1.3;
 }
 
+/* Estilos para títulos y texto en tarjetas */
+.card-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #0054b2;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  
+}
+
+
 .card-subtitle {
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 20px;
-    color: #333333;
+    color: #000000;
     margin-bottom: 0.4rem;
     line-height: 1.3;
 }
@@ -98,6 +118,16 @@ p {
     line-height: 1.5;
 }
 
+.custom-paragrahp {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+
 /* Estilos de diseño para contenedores de tarjetas */
 .card {
     padding: 1.5rem;
@@ -106,6 +136,8 @@ p {
     background-color: #f9f9f9;
     margin-bottom: 1rem;
 }
+
+
 
 /* Efecto hover en tarjetas */
 .card:hover {
@@ -119,6 +151,107 @@ p {
     max-width: 800px;
     margin: auto;
 }
+
+
+/* Estilos para el contenido del card */
+.card-body {
+  text-align: center;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/* Contenedor que controla el tamaño del video y permite aplicar el borde redondeado */
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px; /* Aplica el borde redondeado al contenedor */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra para el contenedor */
+}
+
+/* Estilos para el elemento de video */
+.video-container .video-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px; /* Borde redondeado directamente en el video */
+}
+
+/* Ajustar el tamaño de las imágenes */
+.card .card-img-top {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 300px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover; /* Mantiene la relación de aspecto y rellena el espacio */
+}
+
+/* Estilo general del contenedor del acordeón */
+#accordionExample {
+  margin: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+/* Estilos para cada tarjeta del acordeón */
+#accordionExample .card {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para el encabezado de cada tarjeta */
+#accordionExample .card-header {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Estilo del botón del encabezado */
+#accordionExample .card-header .btn-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+/* Estilo del cuerpo de cada sección */
+#accordionExample .collapse .card-body {
+  background-color: #ffffff;
+  padding: 15px;
+  font-size: 0.95em;
+  font-family: 'Roboto slab',sans-serif;
+  color: #555;
+}
+
+/* Transición para abrir/cerrar el acordeón */
+#accordionExample .collapse {
+  transition: all 0.3s ease;
+}
+
+/* Estilo cuando la sección está activa */
+#accordionExample .collapse.show .card-body {
+  background-color: #f1f1f1;
+}
+
+/* Estilos para el texto */
+.card-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Ajustes para responsive */
+@media (max-width: 768px) {
+  #videos .col-lg-3, #videos .col-lg-6 {
+      margin-bottom: 20px;
+  }
+}
+
 
 /* Estilos adicionales para formulario compacto */
 .form-contact {
@@ -393,6 +526,8 @@ body :not(footer) .card-title {
     margin-bottom: 0.5rem;
     line-height: 1.3;
 }
+
+
 
 body :not(footer) .card-subtitle {
     font-family: 'Roboto Slab', serif;

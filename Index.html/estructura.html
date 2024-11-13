@@ -56,7 +56,6 @@
                         PROGRAMAS ACADÉMICOS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademicos">
-                        <a class="dropdown-item" href="#tecnologia">CURSOS</a>
                         <a class="dropdown-item" href="#mantenimiento">Mantenimiento y Reparación de Computadoras</a>
                         <a class="dropdown-item" href="#decoracion">Decoración de Eventos</a>
                         <a class="dropdown-item" href="#gastronomia">Gastronomía</a>
@@ -76,7 +75,8 @@
                     <a class="nav-link" href="#contacto">CONTACTO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#matriculate">MATRICÚLATE</a>
+                    <!-- Agregamos el evento onclick para mostrar la alerta -->
+                    <a class="nav-link" href="#matriculate" onclick="mostrarAlerta()">MATRICÚLATE</a>
                 </li>
             </ul>
             <form class="d-flex ms-auto navbar-form search-form" role="search">
@@ -86,33 +86,40 @@
             
         </div>
     </div>
-</nav> 
+</nav>
+
+<script>
+// Función para mostrar la alerta
+function mostrarAlerta() {
+    alert("¡Bienvenido a la sección de matrícula!");
+}
+</script>
 
     <!-- Inicia el Hero -->
-
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner mt-1 mb-4">
-            <div class="carousel-item active">
-                <img src="Hero/banner-portal-E.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 1">
-            </div>
-            <div class="carousel-item">
-                <img src="Hero/back_to_school_facebook_cover_17.jpg" class="d-block w-100 img-fluid"
-                    alt="Descripción de la imagen 2">
-            </div>
-            <div class="carousel-item">
-                <img src="Hero/back_to_school_facebook_cover_31.jpg" class="d-block w-100 img-fluid"
-                    alt="Descripción de la imagen 3">
-            </div>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner mt-1 mb-4">
+        <div class="carousel-item active">
+            <img src="Hero/banner-portal-E.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 1">
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleAutoplaying" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleAutoplaying" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
+        <div class="carousel-item">
+            <img src="Hero/back_to_school_facebook_cover_17.jpg" class="d-block w-100 img-fluid"
+                alt="Descripción de la imagen 2">
+        </div>
+        <div class="carousel-item">
+            <img src="Hero/back_to_school_facebook_cover_31.jpg" class="d-block w-100 img-fluid"
+                alt="Descripción de la imagen 3">
+        </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleAutoplaying" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleAutoplaying" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
 
     <!-- Sección de Inicio -->
     <div id="inicio" class="inicio container-fluid mt-4 mb-4">
@@ -203,224 +210,191 @@
             </div>
         </div>
     </div>
+    
 
-<!-- Curso de Mantenimiento y Reparación de Computadoras-->
-<h3 class="card-title mb-4 mt-4">MANTENIMIENTO Y REPARACIÓN DE PC</h3>
+    <h3 class="card-title mb-4 mt-4">SISTEMAS OPERATIVOS Y OFIMÁTICA</h3>
 
-<div id="mantenimiento" class="row container-fluid w-100 my-4 mb-4 mt-4">
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Cur/2/1.webp" class="card-img-top img-fluid" alt="Imagen de curso de mantenimiento" aria-label="Imagen de curso de mantenimiento">
-            <div class="card-body">
-                <h4 class="card-subtitle mb-2 text-muted">Mantenimiento</h4>
-                <p class="card-text text-justify">
-                    Jóvenes estudiantes del curso de diseño y presentaciones de la escuela municipal de oficios
-                    exponiendo sus trabajos en conmemoración a nuestro mes patrio, gracias al gobierno de
-                    Reconciliación y Unidad Nacional por brindar educación gratuita y de calidad. ❤🖤🇳🇮✌
-                    #2021OrgulloPatrio #SanRafaelDelSur #2021PatriaBenditaYLibre
-                </p>
+    <div id="mantenimiento" class="row container-fluid w-100 my-4 mb-4 mt-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="Ofertas Académicas/Cur/2/1.webp" class="card-img-top img-fluid" alt="Imagen de curso de mantenimiento" aria-label="Imagen de curso de mantenimiento">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2 text-muted">Mantenimiento Básico</h4>
+                    <p class="card-text text-justify">
+                        Este módulo aborda la instalación y configuración de sistemas operativos esenciales, así como el manejo básico de ofimática para la creación de documentos. Es ideal para quienes buscan fortalecer sus conocimientos en entornos digitales.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Cur/2/2.webp" class="card-img-top img-fluid" alt="Curso de manualidades" aria-label="Curso de manualidades">
-            <div class="card-body">
-                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
-                <p class="card-text text-justify">
-                    En conmemoración a nuestro mes patrio, compañeras del curso de decoración para eventos
-                    en El Chilamatillo realizaron hermosas manualidades, demostrando su formación técnica
-                    recibida. ✌🖤❤🇳🇮 #2021PatriaBenditaYLibre #2021DignosYLibres #2021OrgulloPatrio
-                </p>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="Ofertas Académicas/Cur/2/2.webp" class="card-img-top img-fluid" alt="Curso de Microsoft Word" aria-label="Curso de Microsoft Word">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2 text-muted">Microsoft Word</h4>
+                    <p class="card-text text-justify">
+                        Aprende a utilizar Microsoft Word para la creación y edición de documentos profesionales. El curso cubre desde formatos básicos hasta herramientas avanzadas, preparándote para crear documentos bien estructurados y visualmente atractivos.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Cur/2/3.webp" class="card-img-top img-fluid" alt="Curso de sistemas operativos y ofimática" aria-label="Curso de sistemas operativos y ofimática">
-            <div class="card-body">
-                <h4 class="card-subtitle mb-2 text-muted">Sistemas Operativos y Ofimática</h4>
-                <p class="card-text text-justify">
-                    #26agosto // Clases del curso de Sistemas Operativos y Ofimática en el turno matutino.
-                    🤓👨🏻‍🏫🎓🖥🖱🌐📶 #ManaguaSandinista #SanRafaelDelSur #2021OrgulloPatrio
-                    #SanRafaelDelSur #2021PatriaBenditaYLibre
-                </p>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="Ofertas Académicas/Cur/2/3.webp" class="card-img-top img-fluid" alt="Curso de sistemas operativos y ofimática" aria-label="Curso de sistemas operativos y ofimática">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2 text-muted">Sistemas Operativos</h4>
+                    <p class="card-text text-justify text-left">
+                        Explora las funciones y administración de sistemas operativos como Windows y Linux. Aprende a instalar, configurar, y solucionar problemas comunes, desarrollando habilidades esenciales para el mantenimiento de computadoras.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card">
-            <img src="Ofertas Académicas/Cur/2/4.webp" class="card-img-top img-fluid" alt="Curso de sistemas operativos y ofimática" aria-label="Curso de sistemas operativos y ofimática">
-            <div class="card-body">
-                <h4 class="card-subtitle mb-2 text-muted">Sistemas Operativos y Ofimática</h4>
-                <p class="card-text text-justify">
-                    #26agosto // Clases de Sistemas Operativos y Ofimática en el turno matutino.
-                    🤓👨🏻‍🏫🎓🖥🖱🌐📶 #ManaguaSandinista #SanRafaelDelSur #2021PatriaBenditaYLibre
-                    #2021DignosYLibres #2021OrgulloPatrio
-                </p>
-            </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="Ofertas Académicas/Cur/2/4.webp" class="card-img-top img-fluid" alt="Curso de aplicaciones ofimáticas" aria-label="Curso de aplicaciones ofimáticas">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2 text-muted">Aplicaciones Ofimáticas</h4>
+                    <p class="card-text text-justify">
+                        Este módulo se centra en el uso de herramientas de ofimática como Excel y PowerPoint, útiles para la administración de datos y la creación de presentaciones efectivas. Desarrolla habilidades para optimizar tareas de oficina y mejorar la productividad.
+                    </p>
+                </div>
+            </div>  
         </div>  
-    </div>  
-</div>
-   <!-- Curso de Gastronomía -->
-            <h3 class="card-title text-center mb-4 mt-4">GASTRONOMÍA</h3>
-            <div id="gastronomia" class="container-fluid mb-4 mt-4">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="card">
-                            <img src="Ofertas Académicas/Gastronomía/3/1.webp" class="card-img-top img-fluid"
-                                alt="Curso de Manualidades">
-                            <div class="card-body">
-                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
-                                <p class="card-text text-justify">
-                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
-                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
-                                    adquiridas, gracias al apoyo de nuestro gobierno.
-                                    <br>
-                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
-                                </p>
-                            </div>
-                        </div>
+    </div><!-- Curso de Gastronomía -->
+    <h3 class="card-title text-center mb-4 mt-4">GASTRONOMÍA</h3>
+    <div id="gastronomia" class="container-fluid mb-4 mt-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="Ofertas Académicas/Gastronomía/3/1.webp" class="card-img-top img-fluid" alt="Curso de Preparación de Café">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2 text-muted">Preparación de Café</h4>
+                        <p class="card-text text-justify">
+                            Los estudiantes de nuestro curso de preparación de café aprenden sobre los diferentes métodos de extracción, tipos de granos y técnicas de barismo. Adquieren habilidades para preparar una taza de café de alta calidad, destacando el sabor y aroma únicos de nuestro grano nicaragüense.
+                            <br>
+                            #CaféNicaragüense #ArteDelCafé #SanRafaelDelSur
+                        </p>
                     </div>
-
-                    <!-- Card con Imagen 2 -->
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="card">
-                            <img src="Ofertas Académicas/Gastronomía/3/2.webp" class="card-img-top img-fluid"
-                                alt="Curso de Manualidades">
-                            <div class="card-body">
-                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
-                                <p class="card-text text-justify">
-                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
-                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
-                                    adquiridas, gracias al apoyo de nuestro gobierno.
-                                    <br>
-                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
-                                </p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+    
+            <!-- Card con Imagen 2 -->
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="Ofertas Académicas/Gastronomía/3/2.webp" class="card-img-top img-fluid" alt="Curso de Preparación de Mariscos">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2 text-muted">Preparación de Mariscos</h4>
+                        <p class="card-text text-justify">
+                            En el curso de mariscos, los participantes aprenden a preparar una variedad de platos marinos, explorando técnicas de cocción y sabores tradicionales de la cocina costera. La formación incluye la selección y preparación de pescados y mariscos frescos, destacando la gastronomía local.
+                            <br>
+                            #SaboresDelMar #CocinaCostera #SanRafaelDelSur
+                        </p>
                     </div>
-
-                    <!-- Card con Imagen 3 -->
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="card">
-                            <img src="Ofertas Académicas/Gastronomía/3/3.webp" class="card-img-top img-fluid"
-                                alt="Curso de Manualidades">
-                            <div class="card-body">
-                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
-                                <p class="card-text text-justify">
-                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
-                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
-                                    adquiridas, gracias al apoyo de nuestro gobierno.
-                                    <br>
-                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
-                                </p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+    
+            <!-- Card con Imagen 3 -->
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="Ofertas Académicas/Gastronomía/3/3.webp" class="card-img-top img-fluid" alt="Curso de Delicateces del Mar">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2 text-muted">Delicateces del Mar</h4>
+                        <p class="card-text text-justify">
+                            Este curso se enfoca en la preparación de platillos gourmet con productos del mar, enseñando técnicas culinarias avanzadas para resaltar los sabores y texturas de los ingredientes marinos. Los estudiantes desarrollan habilidades para crear presentaciones sofisticadas y deliciosas experiencias gastronómicas.
+                            <br>
+                            #GastronomíaDelMar #ExperienciaGourmet #SanRafaelDelSur
+                        </p>
                     </div>
+                </div>
+            </div>
+        </div> <!-- Cierre de la fila -->
+    </div> <!-- Cierre del contenedor -->
+    
 
-                </div> <!-- Cierre de la fila -->
-            </div> <!-- Cierre del contenedor -->
+           <!-- Curso de Decoración de Eventos -->
+<h3 class="card-title text-center mt-4 mb-4">DECORACIÓN DE EVENTOS</h3>
 
-            <!-- Curso de Decoración de Eventos -->
-            <h3 class="card-title text-center mt-4 mb-4">DECORACIÓN DE EVENTOS </h3>
+<div id="decoracion" class="container-fluid mt-4 mb-4">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="Ofertas Académicas/Decoración/deco1.webp" class="card-img-top img-fluid" alt="Decoración para Eventos - Montaje">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2 text-muted">Montaje de Eventos</h4>
+                    <p class="card-text text-justify">
+                        Preciosas decoraciones de montaje para eventos realizadas por las compañeras protagonistas del curso de decoración en la comunidad El Chilamatillo. Este curso demuestra la calidad de nuestros programas sociales impulsados por el gobierno, promoviendo habilidades artísticas en la decoración de eventos.
+                        <br>
+                        #EnVictoriosaEsperanza #ManaguaSandinista
+                    </p>
+                </div>
+            </div>
+        </div>
 
-            <div id="decoracion" class="container-fluid mt-4 mb-4">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="card">
-                            <img src="Ofertas Académicas/Decoración/decoracion.2.webp" class="card-img-top img-fluid"
-                                alt="Curso 1">
-                            <div class="card-body">
-                                <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
-                                <p class="card-text text-justify">Preciosas decoraciones de montaje para evento de las
-                                    compañeras protagonistas del curso de decoración para eventos comunidad el
-                                    chilamatillo demostrando la calidad de nuestros programas sociales fomentados por
-                                    nuestro gobierno del frente sandinista ❤🖤
-                                    #EnVictoriosaEsperanza
-                                    #ManaguaSandinista</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+                <img src="Ofertas Académicas/Decoración/15.webp" class="card-img-top img-fluid" alt="Decoración para Eventos - Manualidades Patrias">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2 text-muted">Manualidades Patrias</h4>
+                    <p class="card-text text-justify">
+                        En conmemoración del mes patrio, las compañeras del curso de decoración en la comunidad El Chilamatillo realizaron estas hermosas manualidades patrióticas. Estas decoraciones reflejan la educación técnica recibida, fortaleciendo el amor por nuestra identidad nacional.
+                        <br>
+                        #2021PatriaBenditaYLibre #2021DignosYLibres #2021OrgulloPatrio
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Cierre de la fila -->
+</div> <!-- Cierre del contenedor -->
 
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="card">
-                            <img src="Ofertas Académicas/Decoración/Decoración.webp" class="card-img-top img-fluid"
-                                alt="Curso 1">
-                            <div class="card-body">
-                                <h4 class="card-subtitle mb-2  text-muted">Manualidades</h4>
-                                <p class="card-text text-justify">En conmemoración a nuestro mes patrio las compañeras
-                                    protagonistas del curso de decoración para eventos comunidad El Chilamatillo
-                                    realizaron
-                                    estas lindas manualidades demostrando la educación técnica que han recibido de parte
-                                    de
-                                    nuestro gobierno sandinista ✌🖤❤🇳🇮
-                                    #2021PatriaBenditaYLibre
-                                    #2021DignosYLibres
-                                    #2021OrgulloPatrio</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                     <!-- Sesión de Actividades -->
-            <h3 class="card-title text-center mt-4 mb-4">NOTICIAS</h3>
-            <div id="noticias" class="container-fluid mb-4 mt-4">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="card">
-                            <img src="Ofertas Académicas/Gastronomía/3/1.webp" class="card-img-top img-fluid"
-                                alt="Curso de Manualidades">
-                            <div class="card-body">
-                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
-                                <p class="card-text text-justify">
-                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
-                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
-                                    adquiridas, gracias al apoyo de nuestro gobierno.
-                                    <br>
-                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Sesión de Actividades -->
+<h3 class="card-title text-center mt-4 mb-4">NOTICIAS</h3>
+<div id="noticias" class="container-fluid mb-4 mt-4">
+    <div class="row">
+        <!-- Card de Promoción de Evento -->
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card">
+                <img src="Actividades/Noticias/1.webp" class="card-img-top img-fluid" alt="Promoción de Evento">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2 text-muted">Promoción de Evento</h4>
+                    <p class="card-text text-justify">
+                        En un esfuerzo por acercar a la comunidad, nuestra Alcaldía de San Rafael del Sur, junto con la Escuela de Oficio, ha lanzado una serie de eventos que destacan la importancia de la educación técnica y la cultura local.
+                        <br>
+                        #ParticipaciónComunitaria #CulturaYEducación
+                    </p>
+                </div>
+            </div>
+        </div>
 
-                    <!-- Card con Imagen 2 -->
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="card">
-                            <img src="Ofertas Académicas/Gastronomía/3/2.webp" class="card-img-top img-fluid"
-                                alt="Curso de Manualidades">
-                            <div class="card-body">
-                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
-                                <p class="card-text text-justify">
-                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
-                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
-                                    adquiridas, gracias al apoyo de nuestro gobierno.
-                                    <br>
-                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Card de Reforestación -->
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card">
+                <img src="Actividades/Noticias/2.webp" class="card-img-top img-fluid" alt="Reforestación">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2 text-muted">Reforestación</h4>
+                    <p class="card-text text-justify">
+                        En el marco de nuestros programas medioambientales, los protagonistas de la comunidad El Chilamatillo participaron en una jornada de reforestación, impulsando un entorno más verde y sostenible.
+                        <br>
+                        #InsurrecciónDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
+                    </p>
+                </div>
+            </div>
+        </div>
 
-                    <!-- Card con Imagen 3 -->
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="card">
-                            <img src="Ofertas Académicas/Gastronomía/3/3.webp" class="card-img-top img-fluid"
-                                alt="Curso de Manualidades">
-                            <div class="card-body">
-                                <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
-                                <p class="card-text text-justify">
-                                    Protagonistas del curso de decoración para eventos de la comunidad El Chilamatillo
-                                    demostrando la calidad de los cursos que se imparten y demostrando sus habilidades
-                                    adquiridas, gracias al apoyo de nuestro gobierno.
-                                    <br>
-                                    #InsurreccionDeLaEsperanza #ManaguaSandinista #SanRafaelDelSur
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div> <!-- Cierre de la fila -->
-            </div> <!-- Cierre del contenedor -->
+        <!-- Card de Entrega de Materiales para Curso -->
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card">
+                <img src="Actividades/Noticias/8.webp" class="card-img-top img-fluid" alt="Entrega de Materiales">
+                <div class="card-body">
+                    <h4 class="card-subtitle mb-2 text-muted">Entrega de Materiales</h4>
+                    <p class="card-text text-justify">
+                        Siempre en restitución de nuestros derechos como nicaragüenses, la Alcaldía de San Rafael del Sur, en coordinación con la Escuela de Oficio, hizo entrega de materiales para el curso de preparación y servicio de bebidas, apoyando el aprendizaje técnico.
+                        <br>
+                        Viva nuestro FSLN ❤🖤 #VamosPorMasVictorias
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Cierre de la fila -->
+</div> <!-- Cierre del contenedor -->
 
              <!-- Sesión de Eventos-->
 
@@ -429,7 +403,7 @@
                  <div class="row">
                      <div class="col-lg-4 col-md-4 col-sm-12">
                          <div class="card">
-                             <img src="Ofertas Académicas/Gastronomía/3/1.webp" class="card-img-top img-fluid"
+                             <img src="Actividades/Eventos/e1.webp" class="card-img-top img-fluid"
                                  alt="Curso de Manualidades">
                              <div class="card-body">
                                  <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
@@ -447,7 +421,7 @@
                      <!-- Card con Imagen 2 -->
                      <div class="col-lg-4 col-md-4 col-sm-12">
                          <div class="card">
-                             <img src="Ofertas Académicas/Gastronomía/3/2.webp" class="card-img-top img-fluid"
+                             <img src="Actividades/Eventos/194638021_304843424635664_7548503290129047033_n.webp" class="card-img-top img-fluid"
                                  alt="Curso de Manualidades">
                              <div class="card-body">
                                  <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
@@ -465,7 +439,7 @@
                      <!-- Card con Imagen 3 -->
                      <div class="col-lg-4 col-md-4 col-sm-12">
                          <div class="card">
-                             <img src="Ofertas Académicas/Gastronomía/3/3.webp" class="card-img-top img-fluid"
+                             <img src="Actividades/Eventos/177827407_276977897422217_2798379870672524799_n.webp" class="card-img-top img-fluid"
                                  alt="Curso de Manualidades">
                              <div class="card-body">
                                  <h4 class="card-subtitle mb-2 text-muted">Manualidades</h4>
@@ -489,8 +463,11 @@
              <div id="videos" class="container-fluid mb-4 mt-4">
                  <div class="row d-flex align-items-stretch">
                      <!-- Primer video y descripción -->
-                     <div class="col-lg-2 col-md-12 mb-4">
-                         <div class="embed-responsive embed-responsive-16by9">
+                     <div class="col-lg-3 col-md-12 mb-4">
+                        <div class="card-videos">
+                            
+                        </div>
+                         <div class="video-container">
                              <video src="Actividades/Videos/AQOxNzWFgv6YU7T9Cq57MeTzSGF07EzYduyYGn7AB5SI134v-ki7tFlZ9mx9DRzxV7kXRSKTQs6GUGyi3hPD-FzJ.mp4"
                                  class="card-img-top img-fluid" autoplay muted controls poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
                              </video>
@@ -505,8 +482,8 @@
                      </div>
              
                      <!-- Segundo video y descripción (ajustado con margen negativo) -->
-                     <div class="col-lg-8 col-md-12 mb-4 mt-n3">
-                         <div class="embed-responsive embed-responsive-16by9">
+                     <div class="col-lg-6 col-md-12 mb-4 mt-n3">
+                         <div class="video-container">
                              <video src="Actividades/Videos/669274380924641.mp4"
                                  class="card-img-top img-fluid" autoplay muted controls poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
                              </video>
@@ -521,8 +498,8 @@
                      </div>
              
                      <!-- Tercer video y descripción -->
-                     <div class="col-lg-2 col-md-12 mb-4">
-                         <div class="embed-responsive embed-responsive-16by9">
+                     <div class="col-lg-3 col-md-12 mb-4">
+                         <div class="video-container">
                              <video src="Actividades/Videos/AQOX3V9Cs8tRnde_FMc-zEt0kQeo2cNphBg0F3r4aGxD96EsqYYdxd-pE2ITCV104itou92CDAq6HNWNOduaUfJK.mp4"
                                  class="card-img-top img-fluid" autoplay muted controls poster="Ofertas Académicas/Gastronomía/retro-poster.jpg">
                              </video>
@@ -537,142 +514,188 @@
                      </div>
                  </div>
              </div>
-             
 
-                            <!-- Carousel para la sección de matrícula-->
-                            <div id="matriculate" class="carousel slide mt-4 mb-4" data-ride="carousel">
-                                <div class="carousel-inner mt-4 mb-4">
-                                    <div class="carousel-item active">
-                                        <img src="Matricúlate/1045vxfo.png" class="d-block w-100 img-fluid"
-                                            alt="Descripción de la imagen 1">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="Hero/back_to_school_facebook_cover_17.jpg"
-                                            class="d-block w-100 img-fluid" alt="Descripción de la imagen 2">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="Hero/back_to_school_facebook_cover_31.jpg"
-                                            class="d-block w-100 img-fluid" alt="Descripción de la imagen 3">
+          <!--Aquí comienza en acordeón -->
+
+             <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Qué es la Escuela de Oficios Tecnológicos?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      La Escuela de Oficios Tecnológicos es una institución educativa dedicada a la formación práctica y especializada en áreas de tecnología y oficios técnicos. Aquí, los estudiantes adquieren habilidades en programación, redes, electrónica y más, con el objetivo de prepararse para carreras demandadas en el sector tecnológico. Además de una educación accesible, los programas están orientados a satisfacer las necesidades de la industria actual.
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Programas Académicos
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      La escuela ofrece una variedad de programas académicos diseñados para cubrir las principales áreas de la tecnología. Los programas incluyen cursos de desarrollo web, ciberseguridad, mantenimiento de redes, reparación de hardware y más. Cada programa combina teoría y práctica, permitiendo a los estudiantes desarrollar proyectos reales y adquirir una experiencia completa antes de ingresar al mercado laboral.
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Beneficios para los Estudiantes
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      La Escuela de Oficios Tecnológicos ofrece múltiples beneficios para sus estudiantes, tales como acceso a equipos de última generación, talleres prácticos, asesoría personalizada y programas de pasantías en empresas tecnológicas. También se proporcionan servicios de orientación laboral y desarrollo profesional para ayudar a los estudiantes a conseguir empleo en su área de especialización al finalizar sus estudios.
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Proceso de Inscripción
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                      El proceso de inscripción en la Escuela de Oficios Tecnológicos es sencillo y accesible. Los aspirantes deben completar un formulario en línea, adjuntar los documentos necesarios y cumplir con los requisitos básicos, como poseer un título de educación secundaria. Una vez aceptados, los estudiantes reciben orientación sobre cómo elegir el programa que mejor se adapte a sus intereses y metas profesionales.
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Oportunidades de Empleo
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                      La escuela mantiene convenios con empresas del sector tecnológico que buscan talento capacitado y especializado. Los estudiantes tienen la oportunidad de participar en ferias de empleo, recibir orientación sobre búsqueda de trabajo, y acceder a una bolsa de empleo exclusiva para egresados. Esto les permite explorar diferentes oportunidades en el mercado laboral y establecer conexiones que faciliten su inserción en el mundo profesional.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+<!-- Carousel para la sección de matrícula-->
+<div id="matriculate" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Hero/banner-portal-E.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 1">
+        </div>
+        <div class="carousel-item">
+            <img src="Hero/back_to_school_facebook_cover_17.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 2">
+        </div>
+        <div class="carousel-item">
+            <img src="Hero/back_to_school_facebook_cover_31.jpg" class="d-block w-100 img-fluid" alt="Descripción de la imagen 3">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#matriculate" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#matriculate" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+
+                           
+                            
+                            <!-- Contenedor del Formulario -->
+                            <div class="wrapper container mt-4 mb-4">
+                                <div id="contacto" class="form-contact mb-2 my-2 mx-4 p-3 shadow-sm">
+                                    <h2 class="text-center mb-2">Formulario de Registro</h2>
+                                    
+                                    <!-- Formulario -->
+                                    <form id="formularioRegistro">
+                                        <!-- Nombre y Apellido -->
+                                        <div class="row g-1">
+                                            <div class="col-12 col-sm-6">
+                                                <label class="form-label" for="input_name">Nombre:</label>
+                                                <input type="text" id="input_name" class="form-control form-control-sm" required>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <label class="form-label" for="input_lastname">Apellido:</label>
+                                                <input type="text" id="input_lastname" class="form-control form-control-sm" required>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- Email -->
+                                        <div class="mb-1">
+                                            <label class="form-label" for="input_email">Email:</label>
+                                            <div class="input-group input-group-sm">
+                                                <span class="input-group-text">@</span>
+                                                <input type="email" id="input_email" class="form-control form-control-sm" required>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- Teléfono, País, Ciudad y Fecha -->
+                                        <div class="row g-1">
+                                            <div class="col-12 col-md-3">
+                                                <label class="form-label" for="telefono">Teléfono:</label>
+                                                <input type="tel" id="telefono" class="form-control form-control-sm" required>
+                                            </div>
+                                           
+                                           
+                                            
+                                        </div>
+                            
+                                        
+                                        <div class="mb-2">
+                                            <label class="form-label" for="comentarios">Comentarios:</label>
+                                            <textarea id="comentarios" class="form-control form-control-sm" rows="2"></textarea>
+                                        </div>
+                            
+                                        <!-- Botones -->
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#confirmModal">Aceptar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <!-- Modal de Confirmación -->
+                            <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="confirmModalLabel">Confirmación de Envío</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ¿Estás seguro de que deseas enviar el formulario?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                            <button type="submit" form="formularioRegistro" class="btn btn-primary">Confirmar Envío</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <a class="carousel-control-prev" href="#carouselExampleAutoplaying" role="button"
-                                    data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Anterior</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleAutoplaying" role="button"
-                                    data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Siguiente</span>
-                                </a>
                             </div>
-<!-- Contenedor Wrapper -->
-<div class="wrapper container mt-4 mb-4">
-    <div id="contacto" class="form-contact mb-2 my-2  mx-4 p-3 shadow-sm">
-        <h2 class="text-center mb-2">Formulario de Registro</h2>
-        <form>
-            <!-- Nombre y Apellido -->
-            <div class="row g-1">
-                <div class="col-12 col-sm-6">
-                    <label class="form-label" for="input_name">Nombre:</label>
-                    <input type="text" id="input_name" class="form-control form-control-sm" required>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <label class="form-label" for="input_lastname">Apellido:</label>
-                    <input type="text" id="input_lastname" class="form-control form-control-sm" required>
-                </div>
-            </div>
-
-            <!-- Email -->
-            <div class="mb-1">
-                <label class="form-label" for="input_email">Email:</label>
-                <div class="input-group input-group-sm">
-                    <span class="input-group-text">@</span>
-                    <input type="email" id="input_email" class="form-control form-control-sm" required>
-                </div>
-            </div>
-
-            <!-- Teléfono, País, Ciudad y Fecha -->
-            <div class="row g-1">
-                <div class="col-12 col-md-3">
-                    <label class="form-label" for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" class="form-control form-control-sm" required>
-                </div>
-                <div class="col-12 col-md-3">
-                    <label class="form-label" for="pais">País:</label>
-                    <input type="text" id="pais" class="form-control form-control-sm" list="paises" required>
-                    <datalist id="paises">
-                        <option value="España">
-                        <option value="Argentina">
-                        <option value="México">
-                        <option value="Colombia">
-                        <option value="Chile">
-                    </datalist>
-                </div>
-                <div class="col-12 col-md-3">
-                    <label class="form-label" for="ciudad">Ciudad:</label>
-                    <select id="ciudad" class="form-select form-select-sm" required>
-                        <option value="">Seleccione</option>
-                        <option value="madrid">Madrid</option>
-                        <option value="bogota">Bogotá</option>
-                        <option value="mexico">Mexico D.C.</option>
-                        <option value="buenos_aires">Buenos Aires</option>
-                        <option value="santiago">Santiago</option>
-                    </select>
-                </div>
-                <div class="col-12 col-md-3">
-                    <label class="form-label" for="fecha">Fecha nacimiento:</label>
-                    <input type="date" id="fecha" class="form-control form-control-sm" required>
-                </div>
-            </div>
-
-            <!-- Color, Conocimientos y Foto -->
-            <div class="row g-1">
-                <div class="col-12 col-md-4">
-                    <label class="form-label" for="color">Color:</label>
-                    <input type="color" id="color" class="form-control form-control-sm" required>
-                </div>
-                <div class="col-12 col-md-4">
-                    <label class="form-label" for="conocimientos">Nivel:</label>
-                    <input type="range" id="conocimientos" class="form-range form-control-sm" min="1" max="10" required>
-                </div>
-                <div class="col-12 col-md-4">
-                    <label class="form-label" for="foto">Foto:</label>
-                    <input type="file" id="foto" class="form-control form-control-sm">
-                </div>
-            </div>
-
-            <!-- Intereses (checkboxes) -->
-            <div class="mb-2">
-                <label class="form-label d-block">Intereses:</label>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" id="tecnologia" value="tecnologia" class="form-check-input">
-                    <label for="tecnologia" class="form-check-label">Tecnología</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" id="negocios" value="negocios" class="form-check-input">
-                    <label for="negocios" class="form-check-label">Negocios</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="checkbox" id="arte" value="arte" class="form-check-input">
-                    <label for="arte" class="form-check-label">Arte</label>
-                </div>
-            </div>
-
-            <!-- Comentarios -->
-            <div class="mb-2">
-                <label class="form-label" for="comentarios">Comentarios:</label>
-                <textarea id="comentarios" class="form-control form-control-sm" rows="2"></textarea>
-            </div>
-
-            <!-- Botones -->
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
-                <button type="reset" class="btn btn-danger btn-sm">Cancelar</button>
-            </div>
-        </form>
-    </div>
-</div>
+                            
+                            
+                            
             <!-- Aquí comienza el Footer -->
 
                             <footer>
